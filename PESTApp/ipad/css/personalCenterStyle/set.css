@@ -1,0 +1,73 @@
+[v-cloak] {
+    display: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #eaefef;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+.list .icon {
+    font-size: 1rem;
+    color: #98ACA8;
+}
+
+.set {
+    margin-bottom: 1rem;
+}
+
+.list {
+    height: 7.2rem;
+    padding: 0 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #223330;
+}
+
+button {
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-family: PingFangSC-Medium;
+    font-weight: 500;
+    color: #f9605d;
+    line-height: 7.2rem;
+}

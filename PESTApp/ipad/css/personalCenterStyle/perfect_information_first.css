@@ -1,0 +1,112 @@
+.btn-continue {
+    background-color: #1adb96;
+    width: 50.9rem;
+    color: white;
+    height: 6rem;
+    border-radius: 1rem;
+    font-size: 2.3rem;
+    margin-top: 2rem;
+    border: none;
+    outline: medium;
+}
+
+.text-gender {
+    width: 100%;
+    text-align: center;
+    font-size: 2.1rem;
+    color: #999999;
+    font-family: "PingFang SC";
+}
+
+.selected-sex {
+    color: #333333;
+}
+
+.content-sex {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.header-bar {
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-title {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+
+.text-title {
+    font-size: 5rem;
+    color: #07AFB9;
+    text-align: center;
+    width: 100%;
+    font-family: "PingFang SC";
+}
+
+.text-subtitle {
+    font-size: 2.4rem;
+    color: #666666;
+    width: 100%;
+    text-align: center;
+    font-family: "Songti SC";
+    line-height: 4rem;
+}
+
+.text-desc {
+    font-size: 1.6rem;
+    color: #999999;
+    width: 100%;
+    text-align: center;
+    font-family: "PingFang SC"
+}
+.text-tip{
+    position: absolute;
+    bottom: 5rem; 
+    font-size: 1.4rem;
+    color: #999999;
+    width: 100%;
+    text-align: center;
+    font-family: "PingFang SC"   
+}
+.gender-wrap {
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.sex {
+    margin-bottom: 1rem;
+}
+
+.wrap {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 8rem;
+}
+
+.image {
+    width: 10rem;
+}

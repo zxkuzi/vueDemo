@@ -1,0 +1,305 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 3rem;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 3rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font_family {
+    font-family:"font_family" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+html,
+body {
+    background-color: #f6f6f6;
+    font-family: "PingFang SC";
+}
+
+.card_t {
+    height: 11.6rem;
+    font-size: 2.5rem;
+    line-height: 11.6rem;
+    padding-left: 4rem;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.exchange_card {
+    height: 11.6rem;
+    display: flex;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    float: right;
+}
+
+.exchange_card>div {
+    margin-right: 4rem;
+    width: 10.7rem;
+    height: 4rem;
+    border-radius: 2px;
+    line-height: 4rem;
+    background-color: #34cbcc;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.card_box {
+    padding: 0 3.8rem;
+    max-height: 55rem;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    overflow: scroll;
+}
+
+.card_xbox {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.card_name_green {
+    width: 45.3rem;
+    height: 15rem;
+    margin-top: 3rem;
+    display: flex;
+    display: -webkit-flex;
+    background-image: url(../../../common/image/kaquan1@2x.png);
+    background-size: 100% 100%;
+}
+
+.card_name_red {
+    width: 45.3rem;
+    height: 15rem;
+    margin-top: 3rem;
+    display: flex;
+    display: -webkit-flex;
+    background-image: url(../../../common/image/kaquan4@2x.png);
+    background-size: 100% 100%;
+}
+
+.card_name_blue {
+    width: 45.3rem;
+    height: 15rem;
+    margin-top: 3rem;
+    display: flex;
+    display: -webkit-flex;
+    background-image: url(../../../common/image/kaquan3@2x.png);
+    background-size: 100% 100%;
+}
+
+.card_name_gray {
+    width: 45.3rem;
+    height: 15rem;
+    margin-top: 3rem;
+    display: flex;
+    display: -webkit-flex;
+    background-image: url(../../../common/image/kaquan2@2x.png);
+    background-size: 100% 100%;
+}
+
+.card_name_l {
+    display: flex;
+    display: -webkit-flex;
+    flex: 2;
+    -webkit-flex: 2;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    padding-top: 5.7rem;
+    padding-left: 2.6rem;
+}
+
+.card_name_r {
+    display: flex;
+    display: -webkit-flex;
+    flex: 1.25;
+    -webkit-flex: 1.25;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+    align-items: center;
+    -webkit-align-items: center;
+    padding: 1rem 0;
+}
+
+.card_mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    z-index: 1;
+}
+
+.card_mask>div {
+    z-index: 2;
+}
+
+.card_popup {
+    position: relative;
+    width: 42rem;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    padding: 2rem 0 3rem 0;
+    text-align: center;
+    background-size: 100% 100%;
+}
+
+.card_popup_t {
+    width: 4rem;
+    height: 0.6rem;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(30deg, #00abb5, #00abb6, #07afb9);
+    background: linear-gradient(30deg, #00abb5, #00abb6, #07afb9);
+    margin: auto;
+}
+
+.card_popup_b {
+    width: 28.5rem;
+    height: 4.5rem;
+    margin: 4.7rem auto 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.card_popup_c {
+    width: 28.5rem;
+    height: 4.5rem;
+    margin: 3rem auto 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.card_popup_b>div {
+    width: 13rem;
+    height: 100%;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 4.5rem;
+    background-color: #1ada95;
+    color: #FFFFFF;
+    font-size: 2.2rem;
+}
+
+.card_popup_c>div {
+    width: 13rem;
+    height: 100%;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 4.5rem;
+    background-color: #1ada95;
+    color: #FFFFFF;
+    font-size: 2.2rem;
+}
+
+.card_name_l>div:first-child {
+    font-size: 2rem;
+}
+
+.card_name_l>div:last-child {
+    font-size: 1.5rem;
+    color: #b2b2b2;
+    margin-top: 2.5rem;
+}
+
+.card_name_r>div>span:first-child {
+    font-weight: bold;
+    font-size: 4rem;
+    color: #FFFFFF;
+}
+
+.card_name_r>div>span:last-child {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.card_name_r>div:last-child {
+    width: 10rem;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.9rem;
+    border-radius: 5px;
+}
+
+#card_b {
+    height: 11rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+    font-size: 1.8rem;
+}
+
+#cardpopup_btn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+#cont_box p {
+    text-align: left;
+    font-size: 1.7rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.con_inp {
+    width: 38.3rem;
+    height: 5.2rem;
+    border-radius: 2px;
+    background-color: #f1f1f1;
+    margin-top: 2rem;
+    font-size: 1.6rem;
+    outline: none;
+    border: 0;
+    margin-bottom: 2rem;
+}
+/*空格k*/
+
+.k {
+    display: inline-block;
+    width: 1rem;
+}
+
+.posi_icon {
+    position: absolute;
+    width: 8rem;
+    height: 8rem;
+    bottom: -1.1rem;
+    right: -3rem;
+}

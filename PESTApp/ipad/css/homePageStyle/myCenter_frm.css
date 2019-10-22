@@ -1,0 +1,168 @@
+[v-cloak] {
+    display: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    background-color: #eaefef;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    margin: 0 auto;
+    margin-bottom: 1.9rem;
+    display: block;
+}
+
+h3 {
+    font-size: 1.8rem;
+    font-family: PingFangSC-Medium;
+    color: rgba(34, 51, 48, 1);
+    line-height: 4.4rem;
+}
+
+h4 {
+    font-size: 2rem;
+    line-height: 1.7rem;
+    color: #223330;
+    text-align: right;
+}
+
+h5 {
+    font-size: 1.6rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(34, 51, 48, 1);
+    line-height: 1.67rem;
+    display: inline-block;
+}
+
+.head {
+    padding-bottom: 4rem;
+    background-color: #fff;
+    padding-top: 4rem;
+}
+.header{
+    width: 100%;
+    height: 6.4rem;
+    padding-top: 2rem;
+    display: flex;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+.news .icon,.icon-header{
+  padding: 0 2.1rem;
+  padding-top: 1.4rem;
+  padding-bottom: 1rem;
+}
+.name{
+   position: relative;
+   height: 4.4rem;
+}
+
+.news {
+    position: relative;
+}
+
+.news span {
+    position: absolute;
+    display: block;
+    right: -0.6rem;
+    top: -0.6rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: rgba(255, 0, 0, 1);
+    border-radius: 50%;
+    font-size: 1rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    line-height: 1.2rem;
+}
+
+.top {
+    position: relative;
+}
+
+.icon-vip {
+    position: absolute;
+    font-size: 2.2rem;
+    right: -2.5rem;
+    top: 1.1rem;
+}
+
+.edit {
+    display: block;
+    font-size: 1.4rem;
+    color: rgba(152, 172, 168, 1);
+    width: 21rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.list {
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.2rem;
+    padding: 0 2.1rem;
+    box-sizing: border-box;
+}
+
+h4 span {
+
+    font-weight: normal;
+    font-size: 1.4rem;
+    color: #223330;
+    text-align: right;
+}
+
+.smart {
+    font-size: 1.4rem;
+
+    font-weight: 300;
+    color: rgba(152, 172, 168, 1);
+    margin-top: 1.1rem;
+}
+
+.left .icon {
+    margin-right: 1rem;
+}
+
+button {
+    width: 7rem;
+    height: 3rem;
+    background-color: #f9605d;
+    border-radius: 0.5rem;
+    font-family: PingFangSC-Medium;
+    font-size: 1.4rem;
+    line-height: 1.67rem;
+    color: #ffffff;
+}
+.vip{
+    background-color: #dec279;
+}
+/*禁止选项颜色*/
+.prohibit,.prohibit>span{
+  color:#c9c9c9
+}

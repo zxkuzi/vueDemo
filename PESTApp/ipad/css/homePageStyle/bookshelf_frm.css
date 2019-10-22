@@ -1,0 +1,367 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+.grade{
+  position: absolute;
+  background: url("../../../common/image02/sel.png") no-repeat scroll right center transparent;
+  background-size: 1rem 0.7rem;
+  font-family: PingFangSC-Medium;
+  font-size: 1.8rem;
+  color: #223330;
+  width: 7rem;
+  height: 1.8rem;
+  padding: 1.8rem 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.head {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.1rem;
+    padding-top: 3.35rem;
+    padding-bottom: 2.5rem;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+.gift{
+     display: flex;
+     align-items: center;
+}
+.gift img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+}
+.gift span{
+    font-family: PingFangSC-Regular;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    color: #ffffff;
+    background-color: #fdb956;
+    padding: 0 0.2rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+.gift .icon{
+     font-size: 2.6rem;
+     margin-top: -0.5rem;
+}
+.calendar {
+    font-family: PingFangSC-Semibold;
+    font-size: 2.4rem;
+    line-height: 1.67rem;
+    color: #00b596;
+}
+
+.banner {
+    margin: 0 2.1rem;
+    margin-bottom: 2rem;
+    height: 29rem;
+}
+.swiper01 img, .swiper02 img, .swiper01 {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.swiper01 .swiper-pagination-bullet {
+    width: 0.7rem;
+    height: 0.7rem;
+    opacity: 0.6;
+    background-color: #fff;
+}
+.swiper01 .swiper-pagination-bullet-active {
+    background: #fff;
+    opacity: 1;
+}
+.tab {
+    font-family: PingFangSC-Regular;
+    font-size: 1.5rem;
+    line-height: 6.5rem;
+    color: #223330;
+    padding: 0 2.1rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab .box {
+    font-family: PingFangSC-Semibold;
+    width: 48.8%;
+    height: 6.5rem;
+    background-color: #eaefef;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tab .icon{
+    font-size: 3rem;
+    margin-right: 0.85rem;
+}
+
+.intelligent,.special,.teacher {
+    margin: 0 2.1rem;
+}
+
+.title {
+    margin-top: 3.5rem;
+    margin-bottom: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.6rem;
+    color: #223330;
+}
+
+.title span {
+    font-size: 1.4rem;
+    color: #708782;
+}
+
+.title .icon{
+    font-size: 1rem;
+    vertical-align: middle;
+}
+
+.btn {
+    width: 100%;
+    height: 16rem;
+    background: url(../../../common/image02/m1.png) no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1rem;
+    padding-top: 5.75rem;
+    box-sizing: border-box;
+}
+
+.btn h1 {
+    font-family: PingFangSC-Regular;
+    font-size: 1.8rem;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2.65rem;
+}
+
+.btn button {
+    display: block;
+    font-family: PingFangSC-Regular;
+    font-size: 1.6rem;
+    color: #3e4494;
+    padding: 0 1.6rem;
+    min-width: 10.3rem;
+    height: 3.4rem;
+    background-color: #ffe178;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+}
+.bookList{
+    width: calc(100% + 4.2rem);
+    margin-left: -2.1rem;
+}
+.swiper02{
+     padding-left: 2.1rem;
+     padding-right: 2.1rem;
+}
+.bookList .swiper-slide{
+    width: 48.9%;
+}
+.bookCover{
+    position: relative;
+    height: 17rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+.bookCover span{
+    padding: 0 1rem;
+
+  	font-size: 1.4rem;
+    color: #fff;
+}
+.bookCover .bookNumber{
+    position: absolute;
+    top: 1.3rem;
+    left: 1.35rem;
+    height: 2.5rem;
+    background-color: #00b596;
+    border-radius: 0.5rem;
+    /*opacity: 0.8;*/
+  	line-height: 2.5rem;
+}
+.bookCover .number{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 3rem;
+    background-color: #000000;
+    /*opacity: 0.6;*/
+  	line-height: 3rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.number .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+}
+.bookList h3{
+  	font-family: PingFangSC-Regular;
+  	font-size: 1.6rem;
+  	color: #00b596;
+    margin-top: 1.35rem;
+    margin-bottom: 0.95rem;
+
+    overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+}
+.bookList p {
+
+  	font-size: 1.4rem;
+  	color: #708782;
+
+    overflow: hidden;text-overflow: ellipsis;white-space: nowrap;
+}
+.teacher .btn {
+    background: url(../../../common/image02/m2.png) no-repeat;
+    background-size: 100% 100%;
+}
+.teacher{
+    margin-bottom: 12.5rem;
+}
+.swiper03{
+     margin: 0 -2.1rem;
+     padding: 0 2.1rem;
+}
+.swiper03 .swiper-slide{
+     width: 11rem;
+}
+.bookImg {
+  	width: 11rem;
+  	height: 16rem;
+  	box-shadow: 0.14rem 0.14rem 0.6rem 0rem rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.2rem;
+}
+h5 {
+  	font-family: PingFangSC-Medium;
+  	font-size: 1.4rem;
+    line-height: 1.7rem;
+  	color: #708782;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+
+    display: -moz-box;
+    -moz-line-clamp: 2;
+    -moz-box-orient: vertical;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 30;
+    display: none;
+}
+.popup h1 {
+    font-size: 2.4rem;
+    line-height: 3.75rem;
+    color: #a75fd7;
+}
+.popup h2 {
+	  font-size: 1.8rem;
+    line-height: 3.5rem;
+    color: #fdc44d;
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: -2.5rem;
+}
+.close .icon {
+    font-size: 1.3rem;
+}
+.popup button{
+     position: absolute;
+     bottom: 2.6rem;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 16rem;
+     height: 4.8rem;
+     line-height: 4.8rem;
+     text-align: center;
+     background-color: #9864ed;
+     color: #fff;
+     font-size: 2.4rem;
+     border-radius: 1rem;
+}
+.login01{
+    padding-top: 2.2rem;
+    width: 34.85rem;
+    height: 46rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 1rem;
+    background: url(../../../common/image02/bg03.png) no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+}
+.popupBg{
+     display: block;
+     width: 19.2rem;
+     height: 19.2rem;
+     border-radius: 50%;
+     margin: 0 auto;
+     margin-bottom: 0.8rem;
+     margin-top: 1.6rem;
+}
+.popupVip{
+    display: block;
+    margin: 0 auto;
+    width: 27.25rem;
+  	height: 15.2rem;
+    margin-bottom: 3.5rem;
+    margin-top: 3.5rem;
+}
+.person{
+    width: 9.9rem;
+    height: 9.2rem;
+    position: absolute;
+    left: 50%;
+    top: -7.75rem;
+    transform: translateX(-50%);
+}
+.popupTop{
+    text-align: left;
+}
+.popupTop img{
+     float: left;
+     width: 2.6rem;
+     height: 2.45rem;
+     margin-left: 2rem;
+     margin-right: 1rem;
+}
+.popupTop span{
+     line-height: 2.45rem;
+     font-size: 1.8rem;
+     color: #fff;
+}

@@ -1,0 +1,70 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+img {
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+}
+
+span {
+    font-size: 1.6rem;
+
+    font-weight: 300;
+    color: rgba(112, 135, 130, 1);
+    line-height: 6.4rem;
+}
+
+.edit {
+    padding: 0 2.4rem;
+    padding-top: 1.1rem;
+}
+
+.box {
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.photo{
+    width: 7.2rem;
+    height: 7.2rem;
+    margin: 1.5rem 0;
+}
+
+.right {
+    color: #c9c9c9;
+}
+
+.color {
+    color: #223330;
+}

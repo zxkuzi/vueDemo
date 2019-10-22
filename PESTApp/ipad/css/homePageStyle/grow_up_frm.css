@@ -1,0 +1,282 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+html, body {
+    background-color: #eaefef;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 2rem;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+    z-index: 10;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    text-align: center;
+}
+
+.top h1 {
+    line-height: 4.4rem;
+}
+
+/*.content {
+    padding-top: 6.4rem;
+}*/
+
+.content>div {
+    background-color: #fff;
+    margin-bottom: 1rem;
+}
+
+.target {
+    display: flex;
+    height: 4.3rem;
+    align-items: center;
+    font-size: 1.4rem;
+    color: #98aca8;
+    float: right;
+    padding-right: 2rem;
+}
+
+.target .icon {
+    font-size: 1.7rem;
+    margin-right: 0.3rem;
+}
+
+.readDate {
+    width: 100%;
+    padding: 0 2.1rem;
+    padding-top: 3.3rem;
+    padding-bottom: 0.4rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.readDate .box {
+    width: 12rem;
+    margin-bottom: 4.6rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+    color: #708782;
+    margin-bottom: 1.7rem;
+}
+
+.readDate span {
+    font-family: PingFangSC-Medium;
+    color: #223330;
+}
+
+.readDate .span01 {
+    font-size: 2rem;
+}
+
+.readDate .span02 {
+    font-size: 1.4rem;
+}
+
+.ability {
+    padding: 0 3.1rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.levelBox {
+    width: 32rem;
+    height: 26.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.6rem;
+    margin-bottom: 4rem;
+    background: url(../../../common/image02/bg06.png) no-repeat;
+    background-size: 100% 100%;
+}
+.levelTop{
+    position: relative;
+    margin: 0 -1rem;
+    margin-top: 24rem;
+}
+.levelBottom{
+    margin: 0 -1rem;
+}
+.levelTop, .levelBottom {
+    display: flex;
+    justify-content: space-between;
+    color: #223330;
+}
+
+.levelTop li {
+    font-size: 0.8rem;
+    font-weight: 900;
+}
+
+.levelBottom li {
+    flex: 1;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2rem;
+    margin-top: 1.35rem;
+    margin-bottom: 1.3rem;
+}
+
+.person {
+    position: absolute;
+    width: 2.7rem;
+    height: 3.4rem;
+    background:url(../../../common/image02/location.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+h4 {
+    font-family: PingFangSC-Medium;
+    font-weight: 900;
+    text-align: center;
+  	font-size: 1rem;
+  	line-height: 1rem;
+  	letter-spacing: -0.08rem;
+  	color: #ffffff;
+    margin-top: 1rem;
+}
+.text {
+    width: 34rem;
+    padding: 1.3rem 1.4rem;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    font-size: 1.4rem;
+    color: #999;
+    border-radius: 0.5rem;
+}
+
+.text p {
+    margin-bottom: 1.2rem;
+    line-height: 1.7rem;
+    text-align: justify;
+}
+
+.text span {
+    display: block;
+    line-height: 1.7rem;
+}
+
+#radar {
+    height: 31.3rem;
+    width: 31.3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+#aloudline,#wordNumber{
+    height: 30rem;
+}
+
+.readTime, .footprint {
+    padding: 0 2.1rem;
+    padding-top: 3rem;
+}
+
+.time {
+    margin-top: 2.7rem;
+}
+
+.calendar {
+    float: left;
+    width: 26rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00b596;
+    border-radius: 0.3rem;
+    font-size: 1.4rem;
+    box-sizing: border-box;
+    color: #fff;
+}
+
+.calendar .icon {
+    font-size: 1.4rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.btn {
+    float: right;
+    margin-right: 4rem;
+    width: 7.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: solid 0.1rem #00b596;
+    box-sizing: border-box;
+    color: #00b596;
+    font-size: 1.4rem;
+}
+
+.btn.sel {
+    background-color: #00b596;
+    color: #fff;
+}
+
+h5 {
+    font-size: 1.4rem;
+    color: #98aca8;
+    padding-bottom: 1.7rem;
+}
+.content .footprint{
+   margin-bottom: 0;
+   padding-bottom: 4.35rem;
+}
+.record{
+  max-height: 20rem;
+  overflow: auto;
+}
+.recordBox{
+    display: flex;
+}
+.leftBox {
+  width: 7.6rem;
+	font-size: 1.4rem;
+  line-height: 2rem;
+	color: #708782;
+}
+.rightBox{
+   width: 100%;
+   font-size: 1.4rem;
+   border-left: 1px solid #98aca8;
+   padding-left: 2.3rem;
+}
+.bookTime{
+   color: #98aca8;
+   margin-right: 1.5rem;
+   line-height: 2rem;
+}
+.bookName{
+   width: 100%;
+   margin-bottom: 2rem;
+   display: flex;
+}
+.rightBox span {
+	color: #708782;
+  line-height: 2rem;
+  display: inline;
+}

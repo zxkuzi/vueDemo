@@ -1,0 +1,79 @@
+body {
+    background: url("../../../common/image/backgroundImage.jpg") no-repeat;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    padding: 14.5rem 9rem 0 9rem;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 3rem;
+}
+
+.icon-change {
+    font-size: 11.4rem;
+}
+.span{
+    line-height: 11.4rem;
+    font-size: 1.8rem;
+}
+.title-text {
+    color: #07AFB9;
+    font-size: 3.5rem;
+    font-family: "PingFang SC";
+    font-weight: bold;
+}
+
+.icon-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.books-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.book {
+    width: 19.5rem;
+    height: 24rem;
+}
+
+.book-wrap {
+    height: 30rem;
+    width: 19.5rem;
+    position: relative;
+
+}
+
+.icon-book {
+    font-size: 11.4rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 16%);
+    bottom: -5%;
+}
+
+.start-reading-wrap {
+    width: 50.9rem;
+    background: #1adb96;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    border-radius: 3rem;
+    position: absolute;
+    bottom: 8.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.8rem;
+    font-family: "PingFang SC";
+    font-weight: bold;
+}

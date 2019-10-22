@@ -1,0 +1,61 @@
+.body {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.img-wrap {
+    width: 100%;
+    height: 39.45rem;
+    background: url(../../../common/image/bg9.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 7.75rem;
+    box-sizing: border-box;
+}
+.image-wrap {
+    display: block;
+    width: 12.65rem;
+    margin: 0 auto;
+    margin-bottom: 2.2rem;
+}
+.text-color {
+    font-size: 2.9rem;
+    color: #fff;
+    text-align: center;
+}
+.content {
+    padding: 1.5rem;
+    width: 39.5rem;
+    height: 28.3rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-top: -7rem;
+}
+.btn-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 0 4.7rem;
+    padding-top: 8.15rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    margin: 0 auto;
+}
+.btn-login,.btn-reg{
+  width: 100%;
+  height: 5.5rem;
+  background-color: #34d1eb;
+  border-radius: 0.6rem;
+  color: #fff;
+  font-size: 2.3rem;
+}
+.btn-login {
+    margin-right: 5rem;
+}
+.btn-reg {
+    margin-top: 3rem;
+}
+.foot-bg{
+  display: block;
+  width: 55.3rem;
+  margin: 0 auto;
+}

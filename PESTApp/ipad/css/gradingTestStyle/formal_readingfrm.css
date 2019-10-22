@@ -1,0 +1,271 @@
+.body {
+    background-color: white;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 7rem;
+}
+
+.iconfont {
+    font-size: 3rem;
+    color: #bbbbbd;
+}
+
+.icon-wrap {
+    position: absolute;
+    top: 3.7rem;
+    left: 3.7rem;
+    width: 6.4rem;
+    height: 6.4rem;
+    z-index: 10;
+}
+
+.text-title {
+    font-size: 3rem;
+    color: rgb(7, 175, 185);
+    width: 100%;
+    text-align: center;
+    height: 9.6rem;
+    line-height: 9.6rem;
+    font-family: "PingFang SC";
+}
+
+.title-wrap {
+    width: 100%;
+    position: relative;
+    height: 9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.reading-content {
+    width: 100%;
+    height: calc(100% - 17rem);
+    border-radius: 6rem 6rem 0 0;
+    display: flex;
+    align-content: center;
+    padding: 5rem 5rem 20rem 5rem;
+    box-sizing: border-box;
+    background-color: #f5f6f7;
+    position: relative;
+    flex-direction: column;
+}
+
+.read-text-wrap {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.footer {
+    height: 8rem;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #becbcc;
+    align-items: center;
+}
+
+.read-text {
+    font-size: 2.8rem;
+    color: #686868;
+    letter-spacing: 0.6rem;
+}
+
+.read-text span {
+    font-size: 2.8rem;
+    color: red;
+}
+
+.warn-text {
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    color: #333333;
+}
+
+.warn-count {
+    color: red;
+    font-size: 1.4rem;
+    font-family: "PingFang SC";
+}
+
+.icon-warn {
+    font-size: 2rem;
+}
+
+.warn-text-wrap {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.btn-record {
+    width: 48rem;
+    height: 14.4rem;
+    position: fixed;
+    bottom: 6rem;
+    left: calc(50% - 24rem);
+}
+
+.text-record {
+    font-size: 1.4rem;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 4rem;
+    color: #1abc9c;
+    font-family: "PingFang SC";
+}
+
+.icon-wrap-record {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.score-wrap {
+    width: 100%;
+    height: 7rem;
+    position: relative;
+}
+
+.footer-icon-wrap {
+    position: absolute;
+    left: 5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: row;
+    height: 6rem;
+    align-items: center;
+    border-radius: 3rem;
+    background-color: #edeeef;
+    padding: 0 0.5rem;
+}
+
+.icon-footer {
+    font-size: 4rem;
+}
+
+.icon-button {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.btn-wrap-record {
+    width: 30%;
+    position: absolute;
+    height: 14.4rem;
+    left: 0;
+}
+
+.btn-wrap-recordB {
+    width: 40%;
+    height: 14.4rem;
+    position: absolute;
+    left: 28%;
+}
+
+.btn-wrap-recordC {
+    width: 30%;
+    height: 14.4rem;
+    position: absolute;
+    left: 70%;
+}
+
+.word-count {
+    width: 100%;
+    text-align: end;
+    font-size: 1.4rem;
+    font-family: "PingFang SC";
+    color: #999999;
+}
+
+.header-bar {
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(to right, #00a9b4, #00d98c);
+    border-radius: 2px;
+    transition: 180s linear;
+}
+
+.header-bar-wrap {
+    width: 70%;
+    height: 4px;
+    background: #becbcc;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.score-text {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    color: white;
+}
+
+.icon-wrap-footer {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    border-radius: 2.5rem;
+    background-color: white;
+}
+
+.submit-btn-wrap {
+    height: 100%;
+    position: absolute;
+    right: 5rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+
+.sub-btn {
+    height: 6rem;
+    width: 13.8rem;
+    background-color: #becbcc;
+    color: white;
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    font-family: "PingFang SC";
+}
+
+.count-down {
+    transition: 180s;
+    width: 0;
+}
+
+.reload-count-down {
+    transition: 0s;
+    width: 100%;
+}

@@ -1,0 +1,52 @@
+body {
+    background: url("../../../common/image/backgroundImage.jpg") 100% 100% no-repeat ;
+    padding-top: 8rem;
+    box-sizing: border-box;
+}
+.avatar-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.avatar-icon {
+    width: 20rem;
+}
+.text-content h2{
+    font-size: 2.1rem;
+    width: 100%;
+    text-align: center;
+    color: #666666;
+
+}
+.text-content .text-desc {
+    font-size: 4rem;
+    color: #1adb96;
+    line-height: 5rem;
+}
+.icon-wrap {
+    margin-top: 3.7rem;
+    margin-left: 3.7rem;
+}
+.text-content {
+    width: 100%;
+    margin-top: 2rem;
+}
+circle {
+    transition: 1s;
+    transition-timing-function: linear
+}
+.svg-circle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+}
+.timer-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9rem;
+    color: #07AFB9;
+}

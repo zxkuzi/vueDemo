@@ -1,0 +1,59 @@
+/*
+配合epub.js解决图片剪裁,需要app端在epub.js渲染前注入该css
+与上版本相比,该css中不再担负img对象的样式处理
+2019-5-17
+*/
+img {
+    width: auto !important;
+    height: auto !important;
+    /*max-width: 100% !important;
+    max-height: 100% !important;*/
+    max-width: 400px !important;
+    max-height: 450px !important;
+}
+
+p {
+    font-family: 'SourceHanSansCN-Regular' !important;
+    font-size: 20px !important;
+    line-height: 34px !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    color:#333333 !important;
+    text-indent: 18px !important;
+    margin: 0 !important;
+    margin-top: 20px !important;
+}
+span, i,strong {
+    font-family: 'SourceHanSansCN-Regular' !important;
+    font-size: 20px !important;
+    line-height: 34px !important;
+    font-style: normal !important;
+    font-weight:normal !important;
+}
+
+body {
+    font-family: 'SourceHanSansCN-Regular' !important;
+    font-size: 20px !important;
+    color: #333333 !important;
+}
+
+h1 {
+    font-family: 'SourceHanSansCN-Regular' !important;
+    font-size: 26px !important;
+    line-height: 30px !important;
+    text-align: center !important;
+}
+
+h2 {
+    font-family: 'SourceHanSansCN-Regular' !important;
+    font-size: 22px !important;
+    line-height: 26px !important;
+    text-align: center !important;
+}
+
+h3,h4,h5,h6 {
+    font-family: 'SourceHanSansCN-Regular' !important;
+    font-size: 21px !important;
+    line-height: 25px !important;
+    text-align: center !important;
+}

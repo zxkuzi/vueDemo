@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<title>书摘朗读详情页</title>
+	<link rel="stylesheet" type="text/css" href="../../css/api.css"/>
+	<link rel="stylesheet" type="text/css" href="../../../common/fontclass02/iconfont.css">
+	<script src="../../../common/fontclass02/iconfont.js"></script>
+	<link rel="stylesheet" href="../../css/swiper.min.css">
+	<script>
+		document.documentElement.style.fontSize = document.documentElement.clientWidth / 768 * 10 + 'px';
+	</script>
+	<link rel="stylesheet" href="../../css/myBookshelfStyle/Readresults_detail.css">
+</head>
+<body>
+<!-- <div id="app" v-cloak> -->
+<div id="app">
+	<!-- 返回 -->
+	<div class="popupBox">
+		<div class="close">
+			<svg class="icon" aria-hidden="true">
+				<use xlink:href="#icon-gb_-copy"></use>
+			</svg>
+		</div>
+
+		<div id="share2" style="">
+			<div class="readTitle">阅读分享</div>
+			<div class="readResults smart">
+
+				 <div class="headPortrait">
+					 <img :src="userImage">
+					 <span>{{name}} <span style="color:#fa716f">·</span> 书摘朗读</span>
+				 </div>
+				 <div class="record">
+						<svg class="icon" aria-hidden="true">
+							<use xlink:href="#icon-tz_-1"></use>
+					  </svg>
+						<div class="soundWave"></div>
+						<span>03:70</span>
+				 </div>
+				 <!-- <div class="" > -->
+						 <p  style="height:120px;overflow-y:scroll">
+						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+					</p>
+				 <!-- </div> -->
+
+				 <div class="bookDetails clearfix">
+						 <img :src="BookCover">
+						 <div class="personNumber">
+								 <h2>{{bookName}}</h2>
+								 <span>{{author}}</span>
+
+						 </div>
+
+				 </div>
+				 <div class="bookFoot langduFoot" style="margin-bottom:11.6rem;">
+					 <div class="">
+							 <div class="tit">连续天数</div>
+							<div class="titDetail">31天</div>
+					 </div>
+					 <div class="">
+							 <div class="tit">累计朗读</div>
+							<div class="titDetail">四本书</div>
+					 </div>
+					 <div class="">
+							 <div class="tit">今日朗读</div>
+							<div class="titDetail">20分钟</div>
+					 </div>
+					<!-- <span class="span01">嘀嗒伴我读书  读书看见成长</span> -->
+				 </div>
+				 <div class="" style="margin-left:60%;transform:translateX(-50%)">
+						 <img src="../../../common/image/avatar.png" alt="" style="width:2.8rem;height:2.8rem;display:line-block;vertical-align:middle"><span style="display:inline-block;vertical-align:middle;font-size:1.2rem;margin-left:10px;">糖小书出品</span>
+				 </div>
+
+				 <div class="tabPopup" v-show="isTab">
+					 <div class="tabL" id="wechatFriend">
+						<svg class="icon" aria-hidden="true">
+							 <use xlink:href="#icon-wx_"></use>
+						</svg>分享到微信
+					</div>
+					<div class="line"></div>
+					<div class="tabR" id="wechatMoments">
+						<svg class="icon" aria-hidden="true">
+							 <use xlink:href="#icon-pyq_"></use>
+						</svg>分享朋友圈
+					</div>
+				 </div>
+			</div>
+			<div class="tab">
+				<div class="tabR" @click="inviteFriend(false,2)">
+					<svg class="icon" aria-hidden="true">
+						 <use xlink:href="#icon-xqfx_-copy"></use>
+				</svg>分享
+				</div>
+			</div>
+	  </div>
+	</div>
+</div>
+</body>
+<link rel="stylesheet" type="text/css" href="../../css/custom-toast.css">
+<link rel="stylesheet" type="text/css" href="../../css/lib-wechatShare.css">
+<script type="text/javascript" src="../../../common/script/api.js"></script>
+<!-- <script type="text/javascript" src="../../../common/script/html2canvas.min.js"></script> -->
+<script type="text/javascript" src="../../../common/script/vue.js"></script>
+<script type="text/javascript" src="../../../common/script/html2canvas.min.js"></script>
+<script type="text/javascript" src="../../../common/script/fastclick.js"></script>
+<script type="text/javascript" src="../../../common/script/custom-toast.js"></script>
+<script type="text/javascript" src="../../../common/script/lib-storage.js"></script>
+<script type="text/javascript" src="../../../common/script/lib-common.js"></script>
+<!-- <script type="text/javascript" src="../../../common/script/services/lib-gradeTest-service.js"></script> -->
+<!-- <script type="text/javascript" src="../../../common/script/lib-analysis.js"></script> -->
+<script type="text/javascript" src="../../../common/script/services/lib-weChatShare-service.js"></script>
+<script type="text/javascript" src="../../../common/script/lib-wechatShare.js"></script>
+<script type="text/javascript" src="../../../common/script/swiper.min.js"></script>
+<script type="text/javascript">
+// apiready = function () {
+		var app = new Vue({
+				el: '#app',
+				data: {
+						isShowRule: false,
+						name:'',
+						isSlide:1,
+						bookName:'',
+						userName:'',
+						swiper01:null,
+						author:'',    //作者
+						chapterName:'',  //单元名
+						shareInfo: '',
+						audioPath:'',
+						userBcover:'../../../common/image02/head.png',
+						userImage: '../../../common/image/avatar.png',
+						BookCover: '../../../common/image/book_cover.png',
+						canShare: false,
+						contentUrl:'',
+						popup:false,
+						isTab:false,
+						publishTime:'',
+						haoping:true,
+						newShareUrl:'',
+						flag:false,
+						flag1:false,
+						isPlay:false,
+						readData:{},
+						auioSrc:'',
+						bookCover:'',
+						deleteFlag:false,
+						txt:'',
+						num:0,
+						isHeart:null
+				},
+				created:function(){
+					console.log(this)
+					// this.pullDownFresh();
+					// this.loadInfo();
+					// this.getStorageInfo();
+					// this.getBookInfo();
+					// this.qrcode();
+				},
+				filters:{
+				
+				},
+				mounted: function () {
+					console.log('-----------')
+					this.getData();	
+				},
+				methods: {
+					getData:function(){
+						let data = {
+							ShareId:1	
+						}
+						console.log(9999)
+						$comm.socket(10002,data,res=>{
+							console.log(88888888)
+							console.log(res)
+						})
+					}	
+						
+				},
+		});
+// };
+</script>
+</html>

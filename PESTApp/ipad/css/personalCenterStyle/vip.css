@@ -1,0 +1,207 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    z-index: 10;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+    box-sizing: border-box;
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+.content {
+    padding: 0 5rem;
+    padding-top: 10rem;
+    padding-bottom: 9rem;
+}
+
+.list {
+    height: 26.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.box img {
+    width: 6.35rem;
+    margin-bottom: 1.35rem;
+}
+
+.box h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.6rem;
+    color: #223330;
+    margin-bottom: 1rem;
+}
+
+.box span {
+    font-family: PingFangSC-Medium;
+    font-size: 1.4rem;
+    color: #98aca8;
+    text-align: center;
+    line-height: 1.5rem;
+}
+.box .span01{
+    font-size: 0.2rem;
+    color:#d0bf79;
+    margin-top:0.3rem;
+    font-size:1.2rem;
+}
+
+video {
+    width: 100%;
+    height: 13.1rem;
+    border-radius: 0.5rem;
+}
+
+h3 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    text-align: center;
+    margin-bottom: 2.75rem;
+    margin-top: 2.8rem;
+}
+
+.package {
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    position: relative;
+    width: 20rem;
+    height: 14.2rem;
+    background: url(../../../common/image02/s1.png) no-repeat;
+    background-size: 100% 100%;
+    padding-top: 3.8rem;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+.bg {
+    background: url(../../../common/image02/s2.png) no-repeat;
+    background-size: 100% 100%;
+}
+.select{
+    transform: scale(1.2);
+    transition: all .3s;
+}
+
+.p1 {
+    font-family: PingFangSC-Regular;
+    font-size: 1.46rem;
+    line-height: 1.67rem;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.p2 {
+    font-family: Futura-CondensedExtraBold;
+    font-size: 3.24rem;
+    line-height: 1rem;
+    color: #ffffff;
+    display: block;
+    text-align: center;
+}
+
+.p3 {
+    font-family: PingFangSC-Regular;
+    font-size: 1.4rem;
+    line-height: 1.67rem;
+    color: #ecf2f2;
+}
+
+.tip {
+    font-family: PingFangSC-Medium;
+    font-size: 1rem;
+    color: #876232;
+    background-image: linear-gradient(-82deg, #eec590 0%, #f8dab3 100%), linear-gradient( #eec590, #eec590);
+    background-blend-mode: normal, normal;
+    position: absolute;
+    left: 0.6rem;
+    top: 0.15rem;
+    padding: 0.5rem 0.8rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+h4 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.4rem;
+    color: #98aca8;
+    margin-top: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+p {
+    font-family: PingFangSC-Thin;
+    font-size: 1.2rem;
+    color: #98aca8;
+    line-height: 2rem;
+}
+.payment{
+    width: 100%;
+    height: 8rem;
+    position: fixed;
+    bottom: 0;
+    padding: 1.75rem 0;
+    background-color: #fff;
+    border-top: 1px solid #f7f7f7;
+    box-sizing: border-box;
+}
+button {
+    display: block;
+  	font-family: PingFangSC-Regular;
+  	font-size: 1.8rem;
+  	color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+  	width: 35rem;
+  	height: 5rem;
+    line-height: 4.5rem;
+  	background-color: #00b596;
+  	border-radius: 1rem;
+}
+a{
+  text-decoration: underline;
+  color: #98aca8;
+}

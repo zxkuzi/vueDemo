@@ -1,0 +1,257 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #eef2f2;
+}
+[v-cloak]{
+  display: none;
+}
+h4{
+    font-size: 3rem;
+    text-align: center;
+    color: #000;
+    font-weight: 900;
+}
+h1,h2{
+    width: 50%;
+    display: block;
+}
+h1{
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+    color: #43e1ac;
+    margin-top: 13.5rem;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    margin-bottom: 13.5rem;
+}
+.top{
+    padding-top: 4.5rem;
+}
+.center{
+    position: relative;
+    margin-top: 3rem;
+    padding: 0 4rem;
+}
+.icon-btn{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 4rem;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 3rem;
+}
+.rule{
+    position: absolute;;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    border: solid 1px #000;
+    color: #000;
+    padding: 0 0.5rem;
+    right: 4rem;
+}
+.invite{
+    width: 34rem;
+    padding: 2rem;
+    font-size: 2.5rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+}
+.share{
+    position: absolute;
+    right: 5rem;
+    top: -6rem;
+    padding: 2rem;
+    width: 38rem;
+    background-color: #f7f9f9;
+    color: #4f646a;
+    box-sizing: border-box;
+}
+.talk{
+    font-size: 1.6rem;
+    text-indent: 3.5rem;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    line-height: 2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /*display: -webkit-box;*/
+    /*-webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;*/
+    border-top: 1px solid #e6dbdb;
+}
+.name{
+    font-size: 1.5rem;
+    color: #4f646a;
+}
+.book-name{
+    font-size: 1.5rem;
+    color: #000;
+}
+.person{
+    height: 7rem;
+}
+.head{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 6rem;
+    float: left;
+    margin-right: 1rem;
+}
+h5{
+    font-size: 2rem;
+    color: #050707;
+    padding-top: 1rem;
+}
+.title{
+    font-size: 1.5rem;
+    color: #8aa0a6;
+    margin-top: 0.5rem;
+}
+.book-map,.read-day{
+    width: 100%;
+    background-color: #f7f7f7;
+    border: 2px solid #f7ecec;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.book-img{
+    width: 8rem;
+    height: 10rem;
+    margin-right: 2rem;
+    float: left;
+}
+.name{
+    font-size: 1.5rem;
+    color: #4f646a;
+}
+.book-name{
+    font-size: 1.8rem;
+    color: #000;
+    margin: 0.5rem 0;
+    font-weight: 900;
+}
+.read-r{
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.read-day{
+    padding: 0 2rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.read-day p{
+    font-size: 1.5rem;
+    color: #8aa0a6;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+.read-day span{
+    display: block;
+    color: #040706;
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    text-align: center;
+}
+.read-day strong{
+    font-size: 1.5rem;
+    color: #1e2629;
+}
+.code{
+    margin-top: 1rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-around;;
+    background-color: #f7f7f7;
+    border: 2px solid #f7ecec;
+    border-radius: 1rem;
+}
+.code-p{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;;
+}
+.code-p p{
+    font-size: 2rem;
+    margin-left: 2rem;
+    line-height: 4rem;
+    color: #00afd9;
+    font-weight: 900;
+    border-bottom: 1px solid #e6dbdb;
+}
+.code-img{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+.code-img img{
+    max-width: 8rem;
+    height: 8rem;
+}
+.make{
+    font-size: 1.3rem;
+    color: #1e2629;
+    margin-left: 2rem;
+}
+.invite-number{
+     margin: 0 auto;
+     text-align: center;
+     font-size: 1.5rem;
+     margin-top: 1rem;
+}
+.invite-number img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.invite-number span{
+    font-weight: 900;
+}
+.cover{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+}
+.popup{
+    position: relative;
+    width: 30rem;
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    color: #000;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.popup .icon{
+    font-size: 2.3rem;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}

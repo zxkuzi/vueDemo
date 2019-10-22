@@ -1,0 +1,155 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+.tip {
+    background-color: #00b596;
+    height: 3rem;
+    padding: 0 2.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip p {
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.tip .icon {
+    font-size: 1.45rem;
+}
+
+.content {
+    padding: 0 3.4rem;
+    padding-top: 6rem;
+}
+
+.grade {
+    height: 10rem;
+    box-shadow: 0rem 0.15rem 0.35rem 0rem rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    color: #fff;
+    padding: 2.5rem 3.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.bgc{
+    background-color: #eee;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h2 {
+    font-family: PingFangSC-Semibold;
+    font-size: 1.8rem;
+}
+
+p {
+    font-family: PingFangSC-Medium;
+    font-size: 1.4rem;
+}
+
+span {
+    font-family: PingFangSC-Semibold;
+    font-size: 1.6rem;
+    margin-left: 1rem;
+}
+.bgc h2{
+     color: #223330;
+}
+.bgc p,.bgc span{
+     color: #708782;
+}
+
+strong {
+    font-family: PingFangSC-Bold;
+    font-size: 2.4rem;
+    line-height: 5rem;
+}
+
+.test {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+h4 {
+    font-family: AdobeHeitiStd-Regular;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-family: AdobeHeitiStd-Regular;
+    font-size: 1.8rem;
+}
+
+.go {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-image: linear-gradient( #ffffff, #ffffff), linear-gradient( #00b596, #00b596);
+    background-blend-mode: normal, normal;
+    box-shadow: 0rem 0.15rem 0.3rem 0rem rgba(0, 0, 0, 0.2);
+    font-family: PingFangSC-Bold;
+    font-size: 2rem;
+    color: #f35d5d;
+    text-align: center;
+    line-height: 5rem;
+    margin-right: 2rem;
+}
+.bg01{
+    background: url(../../../common/image02/grade01.png) no-repeat;
+    background-size: 100% 100%;
+}
+.bg02{
+    background: url(../../../common/image02/grade02.png) no-repeat;
+    background-size: 100% 100%;
+}
+.bg03{
+    background: url(../../../common/image02/grade03.png) no-repeat;
+    background-size: 100% 100%;
+}
+.bg04{
+    background: url(../../../common/image02/grade04.png) no-repeat;
+    background-size: 100% 100%;
+}
+.bg05{
+    background: url(../../../common/image02/grade05.png) no-repeat;
+    background-size: 100% 100%;
+}

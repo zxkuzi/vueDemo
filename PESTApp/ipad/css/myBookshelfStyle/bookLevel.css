@@ -1,0 +1,145 @@
+[v-cloak] {
+    display: none;
+}
+html,body,#app{
+   width: 100%;
+   height: 100%;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+    box-sizing: border-box;
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+.content {
+    padding-top: 6.5rem;
+    height: calc(100% - 6.5rem);
+}
+
+.list {
+    width: 10.4rem;
+    font-family: PingFangSC-Medium;
+    font-size: 1.6rem;
+    color: #223330;
+    height:100%;
+    float: left;
+    overflow: auto;
+    background-color: #f3f4f7;
+}
+li{
+   padding: 2rem 0;
+}
+span{
+	font-family: PingFangSC-Medium;
+	font-size: 1.4rem;
+	color: #708782;
+
+}
+p {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: #708782;
+    margin-top: 1rem;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    -moz-line-clamp: 3;
+    -moz-box-orient: vertical;
+}
+li span {
+    position: relative;
+    width: 100%;
+    font-family: PingFangSC-Medium;
+    font-size: 1.6rem;
+    color: #223330;
+    border-left: 0.5rem solid #f3f4f7;
+    padding-left: 1rem;
+    box-sizing: border-box;
+}
+li .icon {
+    position: absolute;
+    top: -0.25rem;
+    right: 3rem;
+}
+
+li.bg span {
+    border-left: 0.5rem solid #00b596;
+    color: #00b596;
+}
+li.lock span{
+    color: #98aca8;
+}
+.bg{
+    background-color: #fff;
+}
+.book {
+    width: calc(100% - 17rem);
+    height: calc(100% - 4rem);
+    overflow: auto;
+    float: right;
+    margin-top: 4rem;
+    margin-right: 3.5rem;
+}
+.box{
+    height: 16rem;
+    margin-bottom: 2.5rem;
+}
+.imgCover{
+  width: 11rem;
+  height: 16rem;
+  float: left;
+  margin-right: 2.5rem;
+  box-shadow: 0rem 0.2rem 0.59rem 0.01rem rgba(0, 0, 0, 0.1);
+}
+img {
+    width: 11rem;
+    height: 16rem;
+    /*float: left;
+    margin-right: 2.5rem;*/
+    /*box-shadow: 0rem 0.2rem 0.59rem 0.01rem rgba(0, 0, 0, 0.1);*/
+}
+
+h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.center{
+    padding-top: 8.5rem;
+}
+.bookList{
+    padding: 0 3.4rem;
+}

@@ -1,0 +1,235 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+.chapterSpan{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 20.5rem;
+}
+.return {
+    margin-bottom: 4.85rem;
+    padding: 0 2.1rem;
+    padding-top: 3.2rem;
+    padding-bottom: 1.2rem;
+    position: relative;;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 2rem;
+    color: #627773;
+    margin-bottom: 1.6rem;
+}
+.finishTip{
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+  color:#627773;
+}
+.finishTip span{
+  color: #e44d4d;
+}
+
+img {
+    width: 14.55rem;
+    height: 21rem;
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0, 0, 0, 0.06);
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-family: PingFangSC-Regular;
+    font-size: 2rem;
+    color: #223330;
+    margin-bottom: 1.2rem;
+}
+
+h3 {
+
+    font-size: 1.2rem;
+    color: #00b596;
+}
+
+.time {
+    font-family: PingFangSC-Medium;
+    font-size: 8rem;
+    color: #627773;
+    margin: 10rem 0;
+}
+
+.tab {
+    width: 32rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tab span {
+    width: 7.4rem;
+    height: 7.4rem;
+    border-radius: 50%;
+    line-height: 7.4rem;
+    text-align: center;
+    font-family: PingFangSC-Medium;
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.pause {
+    background-color: #00b596;
+    box-shadow: 0rem 0.3rem 0.9rem 0.1rem rgba(0, 181, 150, 0.24);
+}
+.pause1{
+  background-color: #708782;
+  box-shadow: 0rem 0.3rem 0.9rem 0.1rem rgba(0, 181, 150, 0.24);
+
+}
+
+.end {
+    background-color: #e44d4d;
+    box-shadow: 0rem 0.3rem 0.9rem 0.1rem rgba(211, 47, 47, 0.24);
+}
+
+.leave {
+    font-family: PingFangSC-Medium;
+    font-size: 1.6rem;
+    text-decoration: underline;
+    color: #223330;
+    margin-top: 11rem;
+}
+
+.popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 20;
+}
+
+.pragress {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 49.8rem;
+    padding: 0 5.4rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding-top: 4.25rem;
+    box-sizing: border-box;
+    font-family: PingFangSC-Medium;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: -4rem;
+}
+
+.popup h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 2.4rem;
+    color: #223330;
+    margin-bottom: 2.7rem;
+}
+
+.popup h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #708782;
+    margin-bottom: 2.7rem;
+}
+
+.chapter {
+
+    font-size: 1.2rem;
+    color: #708782;
+    margin-bottom: 1rem;
+}
+
+.readTime {
+
+    font-size: 1.8rem;
+    color: #708782;
+    margin-bottom: 3.75rem;
+}
+
+
+/*单选框*/
+.list{
+   max-height: 17rem;
+   overflow: auto;
+}
+.radio {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.radio span {
+    font-family: PingFangSC-Regular;
+    font-size: 1.5rem;
+    color: #708782;
+    line-height: 1.7rem;
+}
+.radio:last-child{
+    margin-bottom: 0;
+}
+
+.select {
+    position: relative;
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    margin-right: 0.8rem;
+    border: 0.1rem solid #98aca8;
+    border-radius: 100%;
+    box-sizing: border-box;
+    vertical-align: -4px;
+}
+
+.select i {
+    display: block;
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 0.2rem;
+    left: 0.2rem;
+    background-color: #646464;
+    border-radius: 100%;
+}
+.btn{
+    margin-top: 4rem;
+}
+.btn span {
+    width: 100%;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 2rem;
+    line-height: 7rem;
+    border-top: 1px solid #e2e2e2;
+    color: #98aca8;
+}
+
+span.color {
+    color: #98aca8;
+}

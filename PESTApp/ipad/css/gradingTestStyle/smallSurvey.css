@@ -1,0 +1,38 @@
+.body {
+    background-color: rgb(247,247,247);
+}
+.title-text {
+    font-size: 5rem;
+    color: #07AFB9;
+    width: 100%;
+    text-align: center;
+    padding-top: 12.1rem;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+}
+.text-desc {
+    font-size: 2.4rem;
+    color: #666666;
+    width: 100%;
+    text-align: center;
+    font-family: "Songti SC";
+    line-height: 4rem;
+}
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15.3rem;
+}
+.btn-continue {
+    background-color: #1adb96;
+    width: 22rem;
+    color: white;
+    height: 6rem;
+    border-radius: 3rem;
+    font-size: 2.3rem;
+    border: none;
+    outline: medium;
+}

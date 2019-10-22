@@ -1,0 +1,24 @@
+﻿/*
+该版本只初步实现了字号,行间的设置;
+下版本要更换成reader_pad.css来实现样式
+2018-5-31
+*/
+img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: 100% !important;
+}
+
+p {
+    line-height: 40px !important;
+}
+
+body {
+    font-size: 20px !important;
+    color: #333333 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 36px !important;
+	line-height: 42px !important;
+}

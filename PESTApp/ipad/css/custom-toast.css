@@ -1,0 +1,118 @@
+.iconfont-toast {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    color: black;
+}
+.toast-content {
+    background-color: rgba(0,0,0,0.2);
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.iconfont-wrap {
+    width: 49.8rem;
+    border-radius: 1rem;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0, 0, 0, 0.4);
+}
+.custom-title {
+    text-align: center;
+  	font-family: PingFangSC-Medium;
+  	font-size: 2.4rem;
+  	color: #223330;
+    margin-bottom: 2.1rem;
+}
+
+.custom-msg {
+    text-align: center;
+    position: relative;
+  	font-family: PingFangSC-Medium;
+  	font-size: 1.6rem;
+  	color: #708782;
+    margin-bottom: 5.8rem;
+
+}
+.iconfont-alert {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    color: #333333
+}
+.custom-buttons-wrap {
+    width: 100%;
+    border-top: 0.1rem solid #e7e7e7;
+    height: 6.4rem;
+    line-height: 6.4rem;
+    display: flex;
+    text-align: center;
+    font-size: 1.8rem;
+}
+.custom-button-A {
+    flex: 1;
+    color: #00b596;
+    border-bottom-left-radius: 1rem;
+}
+.custom-button-B {
+    flex: 1;
+    color: #f9605d;
+    border-left: 0.1rem solid #e7e7e7;
+    border-bottom-right-radius: 1rem;
+}
+.iconfont-wrap-button {
+    width: 49.8rem;
+    border-radius: 0.6rem;
+    background-color: white;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4.25rem;
+    box-sizing: border-box;
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0, 0, 0, 0.4);
+}
+.custom-warn-div{
+  align-self:flex-start;
+  margin-top: -2.5rem;
+  margin-left: 9.4rem;
+  margin-bottom: 1.7rem;
+  font-size: 1.4rem;
+  color: #98aca8;
+}
+
+input[type='checkbox']{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    line-height: 1;
+    border: solid 0.1rem #d6d6d6;
+    -webkit-appearance:none;
+    border-radius: 100%;
+    outline: none;
+    vertical-align: bottom;
+    margin-right: 0.6rem;
+}
+input[type=checkbox]:checked{
+    background: url("../../common/image02/checkedbox.png") no-repeat;
+    background-size: 100% 100%;
+    border: none;
+}
+.custom-warn{
+  /*text-align: left;*/
+  /*display: inline;*/
+  /*display: flex;*/
+}

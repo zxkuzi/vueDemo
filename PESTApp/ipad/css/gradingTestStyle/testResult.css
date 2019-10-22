@@ -1,0 +1,291 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+    background-color: #fff;
+    z-index: 10;
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+.content {
+    padding: 0 2.1rem;
+    padding-top: 10.4rem;
+    padding-bottom: 14.6rem;
+}
+
+.content>div {
+    margin-bottom: 6rem;
+}
+
+.report {
+    position: relative;
+    width: 100%;
+    height: 21rem;
+    background: url(../../../common/image02/bg07.png) no-repeat;
+    background-size: 100% 100%;
+    padding-left: 5rem;
+    padding-top: 4.9rem;
+    box-sizing: border-box;
+}
+
+.report h2 {
+    font-size: 2.4rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.report p {
+    font-size: 2.2rem;
+    color: #ffffff;
+    line-height: 3rem;
+}
+
+.cup {
+    position: absolute;
+    right: 8.5rem;
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateY(-50%);
+    width: 12.05rem;
+    height: 16.8rem;
+    padding-top: 2.1rem;
+    background: url(../../../common/image02/bgcup.png) no-repeat;
+    background-size: 100% 100%;
+    box-shadow: 0rem 0.3rem 0.9rem 0rem rgba(46, 46, 46, 0.16);
+    box-sizing: border-box;
+}
+
+.cup h5 {
+    font-family: PingFangSC-Medium;
+    font-size: 0.7rem;
+    color: #333333;
+    margin-bottom: 0.9rem;
+}
+
+.cup img {
+    width: 6.2rem;
+    height: 6.85rem;
+}
+
+.name {
+    font-size: 0.9rem;
+    color: #19b4f0;
+}
+
+.level {
+    font-size: 0.8rem;
+    color: #333;
+    margin-top: 0.85rem;
+    margin-bottom: 1.15rem;
+}
+
+.level span {
+    font-family: PingFangSC-Medium;
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #fe7400;
+    margin-left: 0.4rem;
+}
+
+.time {
+    font-family: PingFangSC-Medium;
+    font-size: 0.51rem;
+    color: #0f2f56;
+}
+
+h3 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    margin-bottom: 4rem;
+}
+
+.levelBox {
+    width: calc(100% - 1.9rem);
+    height: 26.2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.6rem;
+    margin-bottom: 4rem;
+    background: url(../../../common/image02/bg06.png) no-repeat;
+    background-size: 100% 100%;
+}
+.levelTop, .levelBottom {
+    display: flex;
+    justify-content: space-between;
+    color: #223330;
+}
+
+.levelTop{
+    position: relative;
+    margin: 0 -1rem;
+    margin-top: 24rem;
+}
+.levelBottom{
+    margin: 0 -1rem;
+    margin-top: 2.15rem;
+    margin-bottom: 1.6rem;
+}
+.levelTop li {
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.levelBottom li {
+    flex: 1;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.person {
+    position: absolute;
+    width: 2.7rem;
+    height: 3.4rem;
+    background:url(../../../common/image02/location.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+h4 {
+    font-family: PingFangSC-Medium;
+    font-weight: 900;
+    text-align: center;
+  	font-size: 1rem;
+  	line-height: 1rem;
+  	letter-spacing: -0.08rem;
+  	color: #ffffff;
+    margin-top: 1rem;
+}
+
+.text {
+    width: 100%;
+    padding: 3rem 2.5rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    margin-top: 1.6rem;
+    font-size: 1.4rem;
+    color: #223330;
+    box-sizing: border-box;
+}
+
+.text p {
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.text span {
+    margin-bottom: 0.5rem;
+}
+
+.readAloud, .understand {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.readAloud .icon {
+    width: 3rem;
+    height: 3rem;
+    padding: 0 0.5rem;
+}
+.understand .icon {
+    width: 4rem;
+    height: 4rem;
+}
+
+.span01 {
+    font-size: 1.4rem;
+    color: #223330;
+}
+
+.score {
+    width: 5rem;
+    font-size: 1.6rem;
+    color: #00b596;
+    text-align: right;
+}
+
+.progress {
+    width: 79%;
+    height: 1rem;
+    background-color: #e7e7e7;
+    box-shadow: 0rem 0.3rem 0.9rem 0rem rgba(231, 231, 231, 0.28);
+    border-radius: 0.5rem;
+}
+
+.readAloud .plan {
+    width: 50%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #00d7ab;
+}
+
+.understand .plan {
+    width: 60%;
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #5c7ef9;
+}
+
+.project p {
+    font-size: 1.6rem;
+    color: #223330;
+    text-align: center;
+}
+
+.btn {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+button {
+    display: block;
+    width: 35rem;
+    height: 5rem;
+    line-height: 5rem;
+    background-color: #00b596;
+    border-radius: 1rem;
+    text-align: center;
+    margin: 5rem auto;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+.bg{
+  background: url(../../../common/image02/bg06.png)0 0 no-repeat;
+  background-size: 100% 27rem;
+}

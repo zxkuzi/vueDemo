@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'font_family';
+    src: url('../../../common/fontclass/iconfont.eot');
+    src: url('../../../common/fontclass/iconfont.eot?#iefix') format('embedded-opentype'), url('../../../common/fontclass/iconfont.woff') format('woff'), url('../../../common/fontclass/iconfont.ttf') format('truetype'), url('../../../common/fontclass/iconfont.svg#font_family') format('svg');
+}
+
+.font_family {
+    font-family: "font_family" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+[v-cloak]{
+  display: none;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.popup {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: scroll;
+    padding-bottom: 7.9rem;
+    background-color: #fff;
+}
+
+.popup-hard {
+    display: inline-block;
+    width: 17.75rem;
+    height: 3.5rem;
+    border-radius: 1.8rem;
+    background-color: #edf5db;
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    color: #8fc31f;
+    text-align: center;
+}
+
+.ranking-list {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    float: right;
+    margin-top: 1.5rem;
+}
+
+.popup-t {
+    position: relative;
+    margin-left: 4.5rem;
+    margin-right: 7.5rem;
+    margin-top: 4rem;
+    margin-bottom: 3.2rem;
+    font-size: 2.6rem;
+    color: #333;
+}
+
+.popup-t .iconfont {
+    color: #8fc31f;
+    font-size: 2rem;
+}
+
+.img-avatar {
+    width: 6.5rem;
+    height: 6.5rem;
+    vertical-align: middle;
+    border-radius: 6.5rem;
+}
+
+.popup-t .span01 {
+    color: #07afb9;
+    margin: 0 1rem;
+}
+
+.popup-t .icon {
+    font-size: 2.9rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    color: #fff;
+    margin: 0 2rem;
+    margin-top: 5.6rem;
+    margin-bottom: 6.85rem;
+    background-color: #fff;
+
+}
+
+.content>div {
+    width: 25rem;
+    padding-top: 7rem;
+    box-sizing: border-box;
+    /*border: 1px solid red;*/
+    box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+    height: 43rem;
+    border-radius: 0.7rem;
+}
+.content .ability{
+  width: 35rem;
+}
+.content h3 {
+    font-size: 2.4rem;
+    color: #7b7b7b;
+}
+
+.result h1 {
+    font-family: Futura-CondensedExtraBold;
+    font-size: 9.2rem;
+    color: #8fc31f;
+    margin-top: 7rem;
+}
+
+.answer-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 9.5rem;
+    padding: 0 1.5rem;
+}
+
+.answer span {
+    width: 4.6rem;
+    height: 4.6rem;
+    font-family: PingFangSC-Regular;
+    font-size: 2.3rem;
+    text-align: center;
+    line-height: 4.6rem;
+    border-radius: 50%;
+}
+
+.answer .right {
+    background-color: #1adb96;
+}
+
+.answer .wrong {
+    background-color: #fd4e26;
+}
+
+.ability-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+    padding: 0 2.3rem;
+    box-sizing: border-box;
+}
+
+.ability-box span {
+    width: 9rem;
+    height: 5.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    background-color: #26c931;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 0.5rem;
+    margin-right: 1.5rem;
+    box-sizing: border-box;
+}
+.ability-box span:nth-child(3n){
+  margin-right: 0;
+}
+.ability-box .dimscore{
+  font-style: normal;
+  font-size: 1.6rem;
+}
+.popup-f {
+    position: fixed;
+    width: 100%;
+    height: 7.9rem;
+    box-sizing: border-box;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+}
+
+.popup-f>div {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.popup-f .btn {
+    width: 15rem;
+    line-height: 5rem;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2.4rem;
+}
+
+.popup-f .btn02 {
+    background-color: #1adb96;
+    border-radius: 5.6rem;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.popup-f .btn-color01 {
+    /*background-color: #8fc31f;*/
+    color: #7b7b7b;
+}
+
+.popup-f .btn-color02 {
+    background-color: #1adb96;
+}
+
+.popup-f .btn-color03 {
+    /*background-color: #FF9800;*/
+    color: #7b7b7b;
+}

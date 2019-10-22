@@ -1,0 +1,73 @@
+.wechat-share {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 99;
+}
+.wechat {
+    height: 36rem;
+    width: 45rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 2rem;
+    position: relative;
+    padding-top: 9rem;
+    justify-content: space-around;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.wechat-title {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+}
+.wechat-btn{
+  flex: 1;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.wechat-btn .icon{
+    margin: 0 auto;
+    font-size: 8rem;
+}
+.share-qrCode {
+    width: 30rem;
+    height: 30rem;
+    background-color: white;
+}
+.wechat .close{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+.wechat .close .icon{
+    font-size: 3rem;
+}
+.line{
+    position: absolute;
+    width: 6rem;
+    height: 0.6rem;
+    border-radius: 100px;
+    background: -webkit-linear-gradient(30deg, #00abb5, #00abb6, #07afb9);
+    background: linear-gradient(30deg, #00abb5, #00abb6, #07afb9);
+    margin: auto;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wechat-btn span{
+  display: block;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+}

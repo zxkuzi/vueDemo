@@ -1,0 +1,186 @@
+[v-cloak] {
+    display: none;
+}
+
+body, html, #app {
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.head {
+    width: 100%;
+    position: fixed;
+    padding-bottom: 1.4rem;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+}
+
+.top {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 2.4rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+.content {
+    height: calc(100% - 10.8rem);
+    padding-top: 15.8rem;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.skip {
+    font-size: 1.8rem;
+    /*color: #223330;*/
+    color: #c9c9c9;
+    line-height: 2rem;
+    padding: 1.2rem 0;
+    padding-right: 2.1rem;
+    padding-left: 0.7rem;
+}
+
+.clock {
+    font-size: 1.8rem;
+    color: #00b596;
+    margin: 0 3.4rem;
+    margin-top: 1rem;
+}
+
+.progress {
+    display: inline-block;
+    width: 87%;
+    height: 0.9rem;
+    background-color: #d9d9d9;
+    border-radius: 0.45rem;
+}
+
+.clock .icon {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 2rem;
+    color: #223330;
+    margin-left: 2.1rem;
+}
+
+h2 span {
+    font-family: PingFangSC-Regular;
+    font-size: 1.4rem;
+    color: #98aca8;
+    vertical-align: 0.25rem;
+    margin-left: 1rem;
+}
+
+h3 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #708782;
+    line-height: 2.4rem;
+    margin: 0 3.4rem;
+    margin-top: 2.95rem;
+    margin-bottom: 5.6rem;
+}
+
+.text {
+    font-size: 2rem;
+    line-height: 4.5rem;
+    color: #333333;
+    margin-top: 4rem;
+    text-indent: 2em;
+    padding: 0 3.4rem;
+    margin-bottom: 9rem;
+}
+
+.select {
+    padding: 0 5.9rem;
+}
+
+li {
+    position: relative;
+    width: 100%;
+    padding: 1rem 4.5rem;
+    background-color: #fff;
+    text-align: center;
+    line-height: 2.4rem;
+    box-shadow: 0rem 0.1rem 0.5rem 0rem rgba(0, 0, 0, 0.04);
+    border: solid 0.1rem #999999;
+    border-radius: 10rem;
+    font-family: SourceHanSansCN-Regular;
+    font-size: 1.8rem;
+    color: #708782;
+    margin-bottom: 3rem;
+    box-sizing: border-box;
+}
+
+.select .icon {
+    position: absolute;
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 4.5rem;
+    left: -0.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+li.wrong {
+    border: solid 0.1rem #e75858 !important;
+}
+li.right {
+    border: solid 0.1rem #00b596 !important;
+}
+li.sel {
+    border: none;
+    background-color: #00b596;
+    color: #fff;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+}
+.btn {
+    width: 35rem;
+    height: 5rem;
+    background-color: #00b596;
+    border-radius: 1rem;
+    opacity: 0.5;
+    font-size: 1.8rem;
+    line-height: 5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0.8rem auto;
+}
+
+.tip {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #98aca8;
+    margin-bottom: 2.9rem;
+}

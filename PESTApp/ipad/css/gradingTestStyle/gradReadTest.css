@@ -1,0 +1,240 @@
+[v-cloak] {
+    display: none;
+}
+
+body, html, #app {
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.head {
+    width: 100%;
+    position: fixed;
+    padding-bottom: 1.4rem;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+}
+
+.top {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 2.4rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+.content {
+    height: calc(100% - 43rem);
+    padding-top: 15.8rem;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.skip {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 1.2rem 0;
+    padding-right: 2.1rem;
+    padding-left: 0.7rem;
+}
+
+.clock {
+    font-size: 1.8rem;
+    color: #00b596;
+    margin: 0 3.4rem;
+    margin-top: 1rem;
+}
+
+.progress {
+    display: inline-block;
+    width: 87%;
+    height: 0.9rem;
+    background-color: #d9d9d9;
+    border-radius: 0.45rem;
+    overflow: hidden;
+}
+
+.clock .icon {
+    margin-left: 1rem;
+    margin-right: 0.5rem;
+}
+
+h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 2rem;
+    color: #223330;
+    margin-left: 2.1rem;
+}
+
+h2 span {
+    font-family: PingFangSC-Regular;
+    font-size: 1.4rem;
+    color: #98aca8;
+    vertical-align: 0.25rem;
+    margin-left: 1rem;
+}
+
+.text {
+    color: #333333;
+    margin-top: 2.8rem;
+    padding: 0 3.4rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.text p{
+    font-size: 2rem;
+    line-height: 3.5rem;
+    text-indent: 2em;
+    margin-bottom:1rem;
+    text-align: justify;
+}
+.text::-webkit-scrollbar-track-piece{
+            background-color:#999;
+            -webkit-border-radius:0;
+        }
+.text::-webkit-scrollbar{
+            width:3px;
+            height:1px;
+        }
+.text::-webkit-scrollbar-thumb:vertical{
+           height:20px;
+           background-color:#999;
+           -webkit-border-radius:4px;
+           outline:2px solid #fff;
+           outline-offset:-2px;
+           border:2px solid #fff;
+       }
+.text::-webkit-scrollbar-thumb:hover{
+            height:20px;
+            background-color:#9f9f9f;
+            -webkit-border-radius:4px;
+        }
+.text span{
+  text-indent: 0;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+}
+
+.soundWave {
+    width: 100%;
+    height: 4.5rem;
+    /*background-color: #ceefce;*/
+}
+
+.time {
+    display: block;
+    font-size: 1.4rem;
+    color: #00b596;
+    text-align: center;
+    margin-top: 1.8rem;
+}
+
+.record {
+    display: flex;
+    justify-content: space-between;
+    width: 35rem;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    margin-bottom: 12.9rem;
+}
+
+.record .icon {
+    width: 8rem;
+    height: 8rem;
+    font-size: 8rem;
+}
+
+.countdown {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    background-color: #fff;
+    border: 0.3rem solid #eee;
+    box-sizing: border-box;
+    font-family: PingFangSC-Medium;
+    font-size: 2.9rem;
+    color: #00b596;
+    line-height: 7.4rem;
+    text-align: center;
+}
+
+.record span {
+    display: block;
+    font-size: 1.4rem;
+    color: #98aca8;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.btn {
+    width: 35rem;
+    height: 5rem;
+    background-color: #00b596;
+    border-radius: 1rem;
+    opacity: 0.5;
+    font-size: 1.8rem;
+    line-height: 5rem;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 0.8rem;
+}
+
+.tip {
+    display: block;
+    text-align: center;
+    font-size: 1.2rem;
+    color: #98aca8;
+    margin-bottom: 2.9rem;
+}
+.complete{
+  width: 35rem;
+  height: 5rem;
+  background-color: #00b596;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  line-height: 5rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 0.8rem;
+}
+.mask {
+    background-color: rgba(0,0,0,0.2);
+    width:100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.plan{
+    height: 100%;
+    border-radius: 0.5rem;
+    background-color: #00d7ab;
+}

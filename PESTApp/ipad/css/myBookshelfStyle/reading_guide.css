@@ -1,0 +1,101 @@
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 4.5rem;
+    color: #ffc824;
+}
+img{width: 50%; height: 100%}
+.unit{
+    text-align: center;
+    float: right;
+    width: 50%;
+    height: 100%;
+    font-size: 2.3rem;
+}
+.unit h2{font-size: 2.8rem;margin-top: 10rem;margin-bottom: 3.4rem;}
+.unit h1{font-size: 3.3rem;margin-bottom: 12rem;}
+.unit p{margin-bottom: 16rem;}
+.unit .unit-t{font-size: 1.8rem;margin: 1rem 0;}
+.unit span{font-size: 1.4rem;color: #666;}
+.body {
+    position: relative
+}
+.exit-book-info {
+    position: absolute;
+    top: 4.3rem;
+    left: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: 10;
+}
+.icon-logo-exit {
+    font-size: 2.5rem;
+}
+.map{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+}
+.map-bottom{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.map-clear{
+    width: 20rem;
+    position: absolute;
+    left: 58%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.map-clear i{
+    display: block;
+    position: absolute;
+    left: -5rem;
+    width: 3.8rem;
+    height: 3rem;
+    background: url(../../../common/image/4.png) no-repeat;
+    background-size: 10.5rem 3rem;
+    background-position: -7.5rem 0;
+}
+.map-box{
+    width: 15rem;
+    height: 8rem;
+    border-radius: 0.5rem;
+    border: 1px dashed #fff;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.map-txt{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 1.5;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.map-btn{
+    width: 13rem;
+    height: 5rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Roboto;
+    border: 1px solid rgba(187, 187, 187, 1);
+    color: #fff;
+    line-height: 5rem;
+    margin-top: 2rem;
+    font-weight: 900;
+}

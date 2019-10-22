@@ -1,0 +1,88 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    position: fixed;
+    width: 100%;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(34, 51, 48, 1);
+    line-height: 2.47rem;
+    margin-bottom: 1.2rem;
+}
+
+img {
+    width: 4.9rem;
+    height: 4.9rem;
+    border-radius: 50%;
+    float: left;
+    margin-right: 2.2rem;
+}
+
+span {
+    font-size: 1.4rem;
+
+    font-weight: 300;
+    color: rgba(152, 172, 168, 1);
+}
+
+.news {
+    padding: 0 2.4rem;
+    padding-top: 9rem;
+}
+
+.box {
+    padding: 2.1rem 0;
+    border-top: 1px solid #f9f9f9;
+}
+
+.box:first-child {
+    border: none;
+}
+
+.time {
+    font-size: 1.2rem;
+    float: right;
+}
+
+.text {
+    width: 31rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.name {
+    color: #00B596;
+}

@@ -1,0 +1,685 @@
+@font-face {
+    font-family: 'font_family';
+    src: url('../../../common/fontclass/iconfont.eot');
+    src: url('../../../common/fontclass/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../../../common/fontclass/iconfont.woff') format('woff'),
+    url('../../../common/fontclass/iconfont.ttf') format('truetype'),
+    url('../../../common/fontclass/iconfont.svg#font_family') format('svg');
+}
+.font_family{
+    font-family:"font_family" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+    z-index: 20;
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+.tab {
+    width: 13rem;
+    display: flex;
+    justify-content: space-between;
+    height: 4.4rem;
+}
+
+.tab h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    display: inline-block;
+    padding-top: 1.25rem;
+}
+
+.tab .select {
+    color: #00b596;
+}
+
+.tab .select i {
+    display: block;
+    width: 2.8rem;
+    height: 0.2rem;
+    background-color: #00b596;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 0.15rem;
+}
+.read{
+    padding-top: 7rem;
+}
+.tip {
+    position: relative;
+    background-color: #00b596;
+    padding: 0 2.5rem;
+    display: flex;
+    align-items: center;
+    height: 3.6rem;
+}
+
+.tip img {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 2.8rem;
+    vertical-align: middle;
+    margin-right: 1.3rem;
+}
+
+.tip p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.tip .icon {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 2.1rem;
+    top: 1.15rem;
+}
+
+.book {
+    padding: 0 5.4rem;
+    margin-top: 3.5rem;
+    display: flex;
+    padding-bottom: 2.25rem;
+}
+
+.bookLeft {
+    width: 14.55rem;
+    margin-right: 3.45rem;
+}
+
+.recommend {
+    position: relative;
+    width: 14.55rem;
+    height: 21rem;
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.recommend img {
+    width: 100%;
+    height: 100%;
+}
+
+.recommend .icon {
+    font-size: 5.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.8;
+}
+
+.like {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #708782;
+    /*margin-top: 1.75rem;*/
+}
+.like1{
+  color:#f8615d;
+}
+
+.like .icon {
+    font-size: 1.5rem;
+    margin-right: 0.55rem;
+}
+.bookRight{
+   width: 100%;
+}
+.bookRight h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 2rem;
+    color: #223330;
+    margin-top: 0.9rem;
+}
+
+.bookRight h3 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.4rem;
+    color: #708782;
+    margin-top: 1.15rem;
+}
+
+.label span {
+    height: 2.6rem;
+    line-height: 2.6rem;
+    padding: 0 0.95rem;
+    font-size: 1.2rem;
+    border-radius: 2.6rem;
+    margin-right: 2.3rem;
+    margin-top: 2rem;
+}
+
+.tag01 {
+    color: #fd834b;
+    border: 1px solid #fd834b;
+}
+
+.tag02 {
+    color: #8fc31f;
+    border: 1px solid #8fc31f;
+}
+.summary{
+    position: relative;
+}
+.sel{
+    position: absolute;
+    right: -3.5rem;
+    top: -0.3rem;
+    padding: 1rem;
+}
+.sel .icon{
+    font-size: 1.3rem;
+}
+.summary p{
+  margin-top: 1rem;
+  font-family: PingFangSC-Regular;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #708782;
+  text-align: justify;
+}
+.oriline {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    display: -moz-box;
+    /*-moz-line-clamp: 4;*/
+    -moz-box-orient: vertical;
+}
+.number {
+    margin: 0 5.4rem;
+    padding: 2.9rem 0;
+    border-bottom: 0.1rem solid #f7fafa;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numberLeft {
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 3.5rem;
+    border-right: 0.1rem solid #f7fafa;
+    box-sizing: border-box;
+}
+
+.numberRight {
+    width: 45%;
+    padding-left: 3.5rem;
+    display: flex;
+}
+
+.p1 {
+    font-family: PingFangSC-Medium;
+    font-size: 2rem;
+    color: #223330;
+    display: block;
+}
+
+.p2 {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+}
+
+.p3 {
+    font-size: 1.4rem;
+    color: #98aca8;
+    margin-top: 0.8rem;
+}
+
+.people {
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.people img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 3.5rem;
+}
+
+.people .icon {
+    font-size: 1rem;
+}
+
+.target {
+    margin: 0 5.4rem;
+    margin-top: 3rem;
+}
+
+h4 {
+    font-family: PingFangSC-Regular;
+    font-size: 1.6rem;
+    color: #223330;
+    display: inline-block;
+    margin-right: 1.8rem;
+    margin-bottom: 2.6rem;
+}
+
+.unitNumber {
+    font-size: 1.4rem;
+    color: #708782;
+}
+
+.swiper-slide {
+    width: 21.4rem;
+    border-radius: 1rem;
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0, 0, 0, 0.2);
+}
+
+.bookCover {
+    position: relative;
+    width: 21.4rem;
+    height: 11.85rem;
+}
+
+.mask01, .mask02 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.bookMask, .bookCover img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.mask01 {
+    padding: 1.4rem 1.5rem;
+    box-sizing: border-box;
+}
+
+.mask01 span {
+    display: block;
+    color: #fff;
+    font-family: PingFangSC-Regular;
+}
+
+.mask01 .span01 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.mask01 .span02 {
+    font-family: PingFangSC-Medium;
+    width: 86%;
+    font-size: 1.6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.mask01 .span03 {
+    font-size: 1.4rem;
+    position: absolute;
+    right: 1.45rem;
+    bottom: 1.3rem;
+}
+.mask01 .span04 {
+    font-size: 1.4rem;
+    position: absolute;
+    left: 1.45rem;
+    bottom: 1.3rem;
+}
+
+.mask01 .icon {
+    position: absolute;
+    right: 1.45rem;
+    font-size: 5.2rem;
+    top: 1.05rem;
+}
+
+.mask02 {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.mask02 .icon {
+    position: absolute;
+    font-size: 4.1rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+}
+
+.list {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 1.5rem 2.1rem;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box .icon {
+    font-size: 5rem;
+}
+
+.start {
+    width: 9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.start .icon {
+    font-size: 2.15rem;
+}
+
+.unit {
+    width: calc(100% + 12.8rem);
+    margin-left: -7.4rem;
+}
+
+.swiper-container {
+    padding-bottom: 4.5rem;
+    padding-left: 7.4rem;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.btnLeft, .btnRight {
+    width: 50%;
+    height: 5.7rem;
+    line-height: 5.7rem;
+    text-align: center;
+    font-family: PingFangSC-Regular;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom .icon {
+    margin-right: 1rem;
+}
+
+.btnLeft {
+    background-color: #f7fafa;
+}
+
+.btnRight {
+    background-color: #00b596;
+}
+
+.btnLeft span {
+    color: #98aca8;
+}
+
+.btnRight span {
+    color: #ffffff;
+}
+.information{
+    padding: 0 5.2rem;
+    padding-bottom: 9.2rem;
+}
+
+h5 {
+    font-size: 1.6rem;
+    color: #223330;
+    margin-bottom: 2.6rem;
+}
+
+.information p {
+    font-size: 1.4rem;
+    color: #708782;
+    margin-bottom: 1rem;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 30;
+}
+
+.unlock, .readType {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 49.8rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding-top: 4.25rem;
+    font-family: PingFangSC-Medium;
+}
+
+.unlock {
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup h1 {
+    font-size: 2.4rem;
+    color: #333333;
+    text-align: center;
+}
+
+.unlock h4 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin-top: 1.3rem;
+    margin-bottom: 1.8rem;
+}
+
+.unlock span {
+    font-size: 1.6rem;
+    color: #708782;
+    text-decoration: underline;
+    margin-bottom: 5.7rem;
+}
+
+.unlock button {
+    width: 14rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #00b596;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: -3.7rem;
+}
+
+.lock {
+    font-size: 14rem;
+    margin-top: 4.9rem;
+}
+
+
+.readType {
+    padding-bottom: 2rem;
+}
+
+.type {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+    margin-bottom: 2.6rem;
+}
+
+.type span {
+    width: 13rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    background-color: #00b596;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.6rem;
+    color: #ffffff;
+    box-shadow: 0rem 0.3rem 0.9rem 0.1rem rgba(0, 133, 110, 0.24);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.type span.bgc1 {
+    background-color: #c7c7c7;
+    box-shadow: 0rem 0.3rem 0.9rem 0.1rem rgba(225, 225, 225, 0.24);
+}
+.type span.bgc {
+    background-color: #00b596;
+    box-shadow: 0rem 0.3rem 0.9rem 0.1rem rgba(225, 225, 225, 0.24);
+}
+
+.type .icon {
+    font-size: 3rem;
+}
+
+.apply {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    color: #708782;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply .icon {
+    margin-right: 0.6rem;
+}
+
+.apply.click {
+    color: #f8615d;
+}
+progress {
+    -webkit-appearance: none;
+    width: 18rem;
+    height: 2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+progress::-webkit-progress-bar{
+    background-color: #e7f1fb;
+    border-radius: 1rem;
+}
+progress::-webkit-progress-value{
+    background-color: #1adb96;;
+    border-radius: 1rem;
+}
+.mask-wrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 30;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.mask {
+    width: 34.75rem;
+    height: 9.4rem;
+    background-color: white;
+    border-radius: 4.7rem;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.icon-mask {
+    height: 9.4rem;
+    width: 9.4rem;
+    border-radius: 4.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.mask-icon {
+    font-size: 8rem;
+    transform: rotate(0deg);
+}
+.mask-text {
+    width: calc(100% - 9.4rem);
+    height: 100%;
+    color: #000000;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    display: flex;
+    align-items: center;
+    font-family: "PingFang SC";
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+.mask-progress {
+    color: white;
+    font-size: 2.1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

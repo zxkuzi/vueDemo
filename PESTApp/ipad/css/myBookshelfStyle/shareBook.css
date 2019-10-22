@@ -1,0 +1,71 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.return {
+    width: 2rem;
+    margin-bottom: 1.85rem;
+    padding: 0 2.1rem;
+    padding-top: 3.4rem;
+    padding-bottom: 1rem;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    margin-bottom: 1.9rem;
+}
+
+span {
+    font-family: PingFangSC-Regular;
+    font-size: 1.6rem;
+    color: #223330;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+img {
+    width: 15.05rem;
+    height: 21.55rem;
+    box-shadow: 0rem 0.2rem 0.6rem 0rem rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    font-family: PingFangSC-Regular;
+    font-size: 2rem;
+    color: #223330;
+    margin-top: 1.7rem;
+    margin-bottom: 2.95rem;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 14rem;
+	height: 3.4rem;
+	background-color: #00b596;
+	border-radius: 1rem;
+
+	font-size: 1.4rem;
+	color: #ffffff;
+
+}
+.btn .icon{
+   margin-right: 0.8rem;
+}

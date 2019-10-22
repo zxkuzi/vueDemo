@@ -1,0 +1,130 @@
+body{
+    margin-top: 4rem;
+}
+.icon-btn{
+    width: 4rem;
+    height: 4rem;
+    position: absolute;
+    left: 4rem;
+}
+.iconfont {
+    font-size: 2rem;
+}
+.leaf{
+    position: absolute;
+    right: 4rem;
+}
+.icon {
+   width: 2em; height: 2em;
+   vertical-align: -0.5em;
+   fill: currentColor;
+   overflow: hidden;
+}
+.fl{
+    float: left;
+    width: 70%;
+}
+h2{
+    font-size: 2rem;
+    text-align: center;
+}
+h3{
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+h4{
+    font-size: 1.8rem;
+    line-height: 7rem;
+    text-align: center;
+}
+p{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+.leaf-box span{
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+.task{
+    margin-top: 5rem;
+    border-top: 1px solid #999;
+}
+.task-box{
+    position: relative;
+    height: 6rem;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid #999;
+}
+.task-box .leaf-box{
+    display: inline-block;
+    width: 9rem;
+    line-height: 6rem;
+}
+.btn{
+    font-size: 1.8rem;
+    display: inline-block;
+    width: 15rem;
+    height: 4rem;
+    line-height: 4rem;
+    background-color: #ccc;
+    text-align: center;
+    border-radius: 4rem;
+}
+.finish{
+    background-color: #199ed8;
+    color: #fff;
+}
+.share{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    background: #ccc;
+    top: 2rem;
+    right: 1rem;
+    border: 4rem;
+    text-align: center;
+    line-height: 4.5rem;
+    border-radius: 4rem;
+}
+.map{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+}
+.popup{
+    position: absolute;
+    background-color: #fff;
+    width: 30rem;
+    height: 26rem;
+    margin-left: -15rem;
+    margin-top: -13rem;
+    top: 50%;
+    left: 50%;
+    font-size: 1.8rem;
+    border-radius: 1rem;
+}
+.popup .icon{
+    display: block;
+    width: 5rem; 
+    height: 5rem;
+    margin: 0 auto;
+}
+.popup p{
+    text-align: center;;
+    font-weight: 900;
+    line-height: 5rem;
+}
+.popup-btn{
+    font-size: 3rem;
+    line-height: 5rem;
+    width: 15rem;
+    height: 5rem;
+    margin: 0 auto;
+    background-color: #999;
+    text-align: center;
+    border-radius: 5rem;
+    color: #fff;
+}

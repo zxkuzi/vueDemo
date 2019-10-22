@@ -1,0 +1,208 @@
+[v-cloak] {
+    display: none;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+.head{
+     width: 100%;
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: #fff;
+}
+.top {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 4.4rem;
+}
+.tab{
+     font-family:PingFangSC-Medium;
+     font-size: 1.6rem;
+     color: #223330;
+     width: 24.8rem;
+     display: flex;
+     justify-content: space-between;
+     margin: 0 auto;
+     margin-top: 1.4rem;
+}
+.tabList strong{
+    display: block;
+    width: 3.5rem;
+    height: 0.2rem;
+    background-color: #00b596;
+    margin: 0 auto;
+    margin-top: 0.8rem;
+}
+.content {
+    padding: 0 5.4rem;
+    margin-top: 13.45rem;
+}
+
+.test span {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #708782;
+}
+.explain {
+    font-size: 1.8rem;
+    color: #223330;
+    line-height: 2rem;
+    padding: 1.2rem 0;
+    padding-right: 2.1rem;
+}
+.return .icon{
+  margin-right: 4.8rem;
+}
+.explain .icon{
+  margin-right: 0.5rem;
+}
+.test .tip {
+    font-family: PingFangSC-Regular;
+    color: #00b596;
+    margin-top: 2rem;
+}
+.new .icon{
+   font-size: 3.5rem;
+   margin-top: -0.5rem;
+}
+.new span{
+    color: #e44d4d;
+    vertical-align: 0.6rem;
+}
+
+h2 {
+    font-family: PingFangSC-Medium;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: #ffffff;
+    margin-bottom: 3rem;
+}
+
+h3 {
+    font-family: PingFangSC-Regular;
+    font-size: 2rem;
+    line-height: 3.4rem;
+    color: #ffffff;
+}
+
+.level {
+    height: 21rem;
+    background: url(../../../common/image02/level01.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 4.9rem 0;
+    padding-left: 5.2rem;
+    box-sizing: border-box;
+    margin-top: 2.5rem;
+}
+
+.bg {
+    background: url(../../../common/image02/level02.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.result {
+    height: 11.5rem;
+    background-color: #eaefef;
+    border-radius: 2rem;
+    margin-top: 3.25rem;
+    padding: 2.75rem 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+h4 {
+    font-family: PingFangSC-Medium;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    color: #223330;
+    display: inline-block;
+}
+
+.result .icon {
+    margin-left: 7rem;
+    margin-right: 1rem;
+    font-size: 2.6rem;
+}
+
+.result span {
+    font-family: PingFangSC-Regular;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: #98aca8;
+    display: block;
+    margin-left: 10.6rem;
+    margin-top: 0.5rem;
+}
+
+.left, .right {
+    width: 50%;
+}
+
+.left {
+    border-right: 1px solid #cfd0d2;
+    box-sizing: border-box;
+}
+.start h4,.start span{
+     color: #c9c9c9;
+}
+.record {
+    margin-top: 5.5rem;
+}
+
+h5 {
+    font-family: PingFangSC-Regular;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    color: #708782;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f9f9f9;
+    margin-bottom: 1.5rem;
+}
+
+i {
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 100%;
+    background-color: #fa716f;
+    margin-bottom: 0.5rem;
+    margin-right: 1rem;
+}
+
+p {
+    font-family: PingFangSC-Medium;
+    font-size: 1.8rem;
+    display: inline-block;
+    line-height: 4rem;
+    color: #708782;
+}
+.box{
+  line-height: 2rem;
+}
+.box span {
+    font-size: 1.6rem;
+    line-height: 4rem;
+    color: #708782;
+    float: right;
+}

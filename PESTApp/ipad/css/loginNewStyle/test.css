@@ -1,0 +1,58 @@
+body {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+    padding-top: 13rem;
+}
+h1 {
+    font-size: 4rem;
+    color: #101010;
+    margin-bottom: 6rem;
+    font-family: "PingFang SC";
+}
+h3{
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 15rem;
+    font-family: "PingFang SC";
+}
+button{
+    background-color: #8BC34A;
+    width: 70%;
+    color: white;
+    height: 6rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    margin-top: 5rem;
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.box{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 33.3%;
+    margin-bottom: 5rem;
+}
+.border{
+  border: 1px solid #FF9800;
+  padding: 1rem;
+  border-radius: 100%;
+  margin-bottom: 2rem;
+}
+.content img{
+    width: 2.5rem;
+}
+p{
+    font-size: 1.4rem;
+}
+span{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+}

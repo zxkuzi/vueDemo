@@ -1,0 +1,955 @@
+@font-face {
+    font-family: 'font_family';
+    src: url('../../../common/fontclass/iconfont.eot');
+    src: url('../../../common/fontclass/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../../../common/fontclass/iconfont.woff') format('woff'),
+    url('../../../common/fontclass/iconfont.ttf') format('truetype'),
+    url('../../../common/fontclass/iconfont.svg#font_family') format('svg');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 3rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font_family {
+    font-family:"font_family" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.body {
+    padding: 8rem 0;
+    background-color: white;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 7.2rem;
+}
+
+.icon-wrap {
+    position: absolute;
+    top: 3rem;
+    left: 2.5rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: 9;
+}
+
+.text-title {
+    float: right;
+    color: rgb(7, 175, 185);
+    width: 30%;
+    text-align: center;
+    height: 15rem;
+    font-family: "PingFang SC";
+    padding: 0 3rem;
+    border-left: 2px solid #d6d6d6;
+    box-sizing: border-box;
+}
+
+.text-title h1 {
+    color: #333;
+    font-size: 3rem;
+    text-align: left;
+    line-height: 4rem;
+    margin-bottom: 1.3rem;
+}
+
+.text-title p {
+    color: #666;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.title-wrap {
+    width: 100%;
+    position: relative;
+    height: 9rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.reading-content {
+    float: left;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    padding: 0 4.5rem;
+    padding-bottom: 7rem;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+.read-text-wrap {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.footer {
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-left: 3rem;
+    box-sizing: border-box;
+}
+
+.read-text {
+    font-size: 2.7rem;
+    line-height: 6.5rem;
+    font-family: "PingFang SC";
+    color: #333333
+}
+
+.read-text span {
+    font-size: 2.8rem;
+    color: red;
+}
+
+.warn-text {
+    height: 6rem;
+    line-height: 6rem;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    color: #333333;
+}
+
+.warn-count {
+    color: red;
+    font-size: 1.4rem;
+    font-family: "PingFang SC";
+}
+
+.icon-warn {
+    font-size: 2rem;
+}
+
+.btn-record {
+    width: 100%;
+}
+
+.text-record {
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-family: "PingFang SC";
+}
+
+.score-wrap {
+    width: 100%;
+    height: 7rem;
+    position: relative;
+}
+
+.score01 {
+    font-size: 2.9rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #ffffff;
+    transform: translate(-50%, -50%);
+    font-family: "PingFang SC";
+    font-weight: bold;
+}
+
+.score03 {
+    font-size: 2.3rem;
+    width: 5.8rem;
+    height: 5.8rem;
+    border-radius: 2.9rem;
+    line-height: 5.8rem;
+    border: 0.3rem solid #eee;
+    margin: 0 auto;
+    box-sizing: border-box;
+    color: #fff;
+    background: #8fc31f;
+    text-align: center;
+}
+
+.wrap-height {
+    margin-top: 3.2rem;
+    visibility: hidden;
+}
+
+.icon-footer {
+    font-size: 4rem;
+}
+
+.icon-button {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 2.5rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.btn-wrap-recordB .icon {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.btn-wrap-recordB {
+    margin: 4.4rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-wrap-recordC {
+    margin-top: 4.4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-text {
+    font-size: 1.6rem !important;
+    text-align: center !important;
+}
+.word-count {
+    width: 100%;
+    text-align: end;
+    font-size: 1.4rem;
+    font-family: "PingFang SC";
+    color: #999999;
+}
+
+.score-text {
+    font-size: 3rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    color: white;
+}
+
+.icon-wrap-footer {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    border-radius: 2.5rem;
+    background-color: white;
+}
+
+.count-down {
+    transition: 180s;
+    width: 0;
+}
+
+.reload-count-down {
+    transition: 0s;
+    width: 100%;
+}
+
+.positive-timing {
+    display: flex;
+    color: #8fc31f;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 1.8rem;
+    margin-right: 1rem;
+    vertical-align: middle;
+    background-color: #8fc31f;
+}
+
+.go_book {
+    position: absolute;
+    width: 3.4rem;
+    height: 9rem;
+    font-size: 1.8rem;
+    background-color: #666666;
+    border-radius: 1rem 0rem 0rem 1rem;
+    padding: 2rem 1rem;
+    line-height: 1.8rem;
+    box-sizing: border-box;
+    right: 0;
+    top: 50%;
+    margin-top: -5.5rem;
+    color: #fff;
+}
+
+.bottom-menu .positive-timing {
+    display: inline-block;
+    margin-right: 6.5rem;
+    color: #fff;
+}
+
+.bottom-menu,
+.top-menu {
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    left: 0;
+    height: 9.5rem;
+    z-index: 99;
+    padding: 0 4.5rem;
+    box-sizing: border-box;
+}
+
+.top-menu {
+    top: 0;
+    display: none;
+}
+
+.bottom-menu {
+    bottom: 0;
+    display: none;
+}
+
+.menu-show {
+    display: block;
+}
+
+.menu-hide {
+    display: none;
+}
+
+.icon-btn {
+    color: #fff;
+    margin-right: 0.2rem;
+    font-size: 2.3rem;
+}
+
+.text-color {
+    color: white;
+    font-size: 2.1rem;
+    line-height: 9.5rem;
+}
+
+.menu-fs {
+    display: inline-block;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    box-sizing: border-box;
+    display: none;
+}
+
+.iconfont {
+    font-size: 3rem;
+}
+
+.popup .icon-wrap-right {
+    position: absolute;
+    top: 4.5rem;
+    right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.share-text {
+    font-size: 1.1rem;
+    color: #bcbcbd;
+}
+
+.popup-t {
+    margin: 0 2.5rem;
+    margin-top: 8rem;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: #333;
+    padding-left: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.popup-t img {
+    width: 6.5rem;
+    height: 6.5rem;
+    vertical-align: middle;
+    border-radius: 3.25rem;
+}
+
+.popup-t .span01 {
+    color: #07afb9;
+    margin: 0 1rem;
+}
+
+.popup-t .span02 {
+    font-family: Futura-CondensedExtraBold;
+    font-size: 3.6rem;
+    color: #1adb96;
+    margin: 0 0.1rem;
+}
+
+.content {
+    margin: 0 2.5rem;
+    background: url(../../../common/image/backgroundImage1.jpg);
+    background-size: 100% 100%;
+    border-radius: 3rem;
+    padding: 3rem;
+    height: 40rem;
+}
+
+.content p {
+    font-size: 2.1rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.popup-hard {
+    width: 15rem;
+    height: 3.5rem;
+    border-radius: 1.8rem;
+    background-color: #edf5db;
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    color: #8fc31f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+
+.popup-hard .iconfont {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: #8fc31f;
+}
+
+.popup-play {
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding-top: 8.7rem;
+}
+
+.popup-play img {
+    max-width: 13.7rem;
+    max-height: 11.55rem;
+}
+
+.popup-chart {
+    width: 100%;
+    height: auto;
+}
+
+.popup-score {
+    width: 37%;
+    float: right;
+    margin-top: -2rem;
+}
+
+.data-map {
+    width: 100%;
+    display: flex;
+}
+
+.popup-score h6 {
+    line-height: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+}
+
+.popup-score h6 i {
+    display: inline-block;
+    height: 0.98rem;
+    width: 1.05rem;
+    background: url(../../../common/image/Title-zhuangshi@3x.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 0.5rem;
+}
+
+.data-results {
+    width: 6.3rem;
+    height: 25.2rem;
+    background-color: #E8E8E8;
+    border-radius: 5.25rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.data {
+    width: 100%;
+    background-color: #1cda95;
+    border-radius: 5.25rem;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    transition: height 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.icon-data {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.score {
+    color: white;
+    font-family: "PingFang SC";
+    font-size: 1.9rem;
+    margin: 0.5rem 0;
+}
+
+.desc {
+    color: white;
+    font-family: "PingFang SC";
+    font-size: 1.6rem;
+}
+
+.desc-text {
+    width: 6.5rem;
+    line-height: 4rem;
+    color: #fff;
+    font-family: "PingFang SC";
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+
+.popup-f {
+    position: relative;
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 2.8rem;
+    height: 11rem;
+}
+.popup-f>div{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.popup-f .btn {
+    width: 15rem;
+    line-height: 5rem;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+}
+
+.popup-f .btn02 {
+    background-color: #1adb96;
+    border-radius: 5.6rem;
+    color: #fff;
+    margin: 0 auto;
+}
+.popup-f .btn-color01{
+    background-color: #8fc31f;
+}
+.popup-f .btn-color02{
+    background-color: #1adb96;
+}
+.popup-f .btn-color03{
+    background-color: #FF9800;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    flex-direction: row;
+}
+
+.show-right-menu {
+    display: flex;
+}
+
+.right-menu {
+    width: 50%;
+    height: 100%;
+    z-index: 100;
+}
+
+.bigMenu {
+    width: 50%;
+    height: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.bigMenu .menu-h,
+.bigMenu .menu-f {
+    width: 100%;
+    padding: 0 4.5rem;
+    box-sizing: border-box;
+}
+
+.bigMenu .menu-h {
+    height: 21.3rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+    padding-top: 4.1rem;
+}
+
+.menu-t h1,
+.menu-t p,
+.menu-f li p,
+.menu-f li p {
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-overflow: ellipsis;
+}
+
+.menu-t h1 {
+    width: 18.5rem;
+    font-size: 2.3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+    color: #333;
+}
+
+.menu-t p {
+    width: 18.7rem;
+    font-size: 1.9rem;
+}
+
+.menu-t span {
+    font-size: 1.4rem;
+    color: #999;
+}
+
+.bigMenu img {
+    width: 20.1rem;
+    height: 12.5rem;
+    float: left;
+    margin-right: 2rem;
+}
+
+.menu-fs {
+    display: inline-block;
+}
+
+.menu-tr {
+    height: 12.5rem;
+    padding: 1rem 0;
+}
+
+.menu-pro {
+    display: inline-block;
+    width: 3rem;
+    height: 1rem;
+}
+
+.pro-s {
+    margin-right: 2.3rem;
+    height: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.plan {
+    display: inline-block;
+    height: 4.6px;
+    background-color: #becbcc;
+    width: 20.1rem;
+    border-radius: 2.3rem;
+    position: relative;
+    margin-right: 2.1rem;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2.3rem;
+}
+
+.menu-f ul {
+    height: 40rem;
+    overflow: scroll;
+}
+
+.menu-f li {
+    line-height: 5rem;
+    font-size: 1.9rem;
+    color: #999;
+    padding-left: 4rem;
+    position: relative;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.menu-f li p {
+    display: inline-block;
+    color: #999;
+    width: 30rem;
+}
+
+.menu-f li.cur p {
+    color: #07afb9;
+}
+
+.menu-f i {
+    position: absolute;
+    left: 0;
+}
+
+.menu-f li span {
+    display: inline-block;
+    float: right;
+    color: #333;
+    margin-right: 1.7rem;
+}
+
+.menu-icon {
+    font-size: 2.5rem
+}
+
+.menu-f li.cur span {
+    color: #999
+}
+
+.menu-f-m {
+    position: absolute;
+    bottom: 3.1rem;
+    height: 2.3rem;
+    font-size: 2.1rem;
+}
+
+.menu-f-m .iconfont {
+    position: relative;
+    margin-right: 1.7rem;
+}
+.icon-grade {
+    font-size: 2rem;
+}
+
+.cover,.cover02,.cover03,.cover04{
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+.map-bottom{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.between.mt{
+    margin-top: 5rem;
+}
+.map-clear{
+    width: 51rem;
+    position: absolute;
+    left: 50%;
+    top: 66%;
+    transform: translate(-50%,-50%);
+}
+.map-box{
+    width: 35rem;
+    height: 9rem;
+    border-radius: 0.5rem;
+    border: 1px dashed #fff;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.map-txt{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.map-btn{
+    width: 13rem;
+    height: 5rem;
+    border-radius: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: Roboto;
+    border: 1px solid rgba(187, 187, 187, 1);
+    color: #fff;
+    line-height: 5rem;
+    margin-bottom: 4rem;
+    font-weight: 900;
+}
+.map-top{
+    width: 10rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.bg-map{
+    width: 12.7rem;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.map-key{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.key02{
+    height:8.5rem;
+}
+.key03{
+    height:19.5rem;
+}
+.prompt-area{
+    width: 20rem;
+    height: 16rem;
+}
+.map-clear .point{
+    width: 23rem;
+    height: 2rem;
+    background: url(../../../common/image/1.png) no-repeat;
+    transform: rotate(180deg);
+}
+.cover02 .bg-map{
+    width: 28rem;
+}
+.cover02 .key02{
+    height: 60rem;
+}
+.cover02 .map-clear .point{
+    transform: rotate(0deg);
+}
+.cover02 .map-top{
+    width: 30rem;
+    height: 100%;
+}
+.cover02 .prompt-area{
+    width: 15rem;
+    height: 40rem;
+}
+
+.cover02 .map-clear{
+    left: 63%;
+    top: 50%;
+}
+.cover02 .map-btn{
+    margin-left: 24rem;
+}
+.cover03 .map-top{
+    width: 4.4rem;
+}
+.cover03 .prompt-area{
+    width: 4.4rem;
+    height: 26rem;
+}
+.cover03 .key01{
+    height: 81rem;
+}
+.cover03 .map-box {
+  width: 18rem;
+}
+.cover03 .map-clear{
+    width: 43rem;
+    left: 75%;
+    top: 43%;
+}
+.cover03 .map-txt span{
+  font-weight: 900;
+  font-size: 2.3rem;
+  color: #FFC000;
+}
+.cover04{
+    flex-direction: column;
+}
+.cover04 .bg-map{
+    width: 100%;
+    height: 15rem;
+}
+.cover04 .map-top{
+    width: 100%;
+    flex-direction: row;
+    height: 30rem;
+}
+.cover04 .map-key{
+    width:4%;
+    height: 100%;
+}
+.cover04 .prompt-area{
+    width:64%;
+    height: 100%;
+}
+.cover04 .key04{
+    width: 32%;
+    height: 100%;
+}
+.cover04 .map-box{
+    width: 42rem;
+    height: 14rem;
+    margin-bottom: 4rem;
+}
+.cover04 .map-clear{
+    top: 60%;
+    left: 40%;
+}
+.cover04 span{
+    font-weight: 900;
+    font-size: 2.3rem;
+}
+.cover04 .map-txt{
+    text-align: left;
+}
+.cover04 .color01{
+    color: #FF0000;
+}
+.cover04 .color02{
+    color: #FFC000;
+}
+.cover04 .color03{
+    color: #92D050;
+}

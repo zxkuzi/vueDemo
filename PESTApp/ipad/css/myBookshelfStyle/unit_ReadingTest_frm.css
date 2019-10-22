@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'font_family';
+    src: url('../../../common/fontclass/iconfont.eot');
+    src: url('../../../common/fontclass/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../../../common/fontclass/iconfont.woff') format('woff'),
+    url('../../../common/fontclass/iconfont.ttf') format('truetype'),
+    url('../../../common/fontclass/iconfont.svg#font_family') format('svg');
+}
+[v-cloak]{
+  display: none;
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 3rem;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font_family {
+    font-family:"font_family" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 7.2rem;
+}
+
+.popup {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: scroll;
+    background-color: #fff;
+}
+
+.popup-hard {
+    display: inline-block;
+    width: 17.75rem;
+    height: 3.5rem;
+    border-radius: 1.8rem;
+    background-color: #edf5db;
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+    font-weight: bold;
+    color: #8fc31f;
+    text-align: center;
+}
+
+.ranking-list {
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    float: right;
+    margin-top: 1.5rem;
+}
+.popup-t {
+    position: relative;
+    margin-left: 4.5rem;
+    margin-right: 7.5rem;
+    margin-top: 4rem;
+    margin-bottom: 3.2rem;
+    font-size: 2.6rem;
+    color: #333;
+}
+.popup-t .iconfont {
+    color: #8fc31f;
+    font-size: 2rem;
+}
+
+.img-avatar {
+    width: 6.5rem;
+    height: 6.5rem;
+    vertical-align: middle;
+    border-radius: 6.5rem;
+}
+
+.popup-t .span01 {
+    color: #07afb9;
+    margin: 0 1rem;
+}
+
+.popup-t .icon {
+    font-size: 2.9rem;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    color: #f5faff;
+    margin-top: 4.5rem;
+    padding-bottom: 5rem;
+}
+.content>div{
+  width: 40rem;
+  height: 48.8rem;
+  background-color: #ffffff;
+  /*box-shadow: 0px 8px 18px 0px rgba(65, 194, 252, 0.22);*/
+  box-shadow: 0 0 2rem rgba(0, 0, 0, .1);
+  border-radius: 0.7rem;
+  box-sizing: border-box;
+}
+.result p{
+    font-size: 1.8rem;
+    color: #7b7b7b;
+    text-align: left;
+    padding: 2.5rem 2.75rem;
+    padding-bottom: 0;
+}
+.result span{
+  display: inline;
+}
+.result img{
+  width: 14rem;
+  height: 14rem;
+  margin-top: 3.5rem;
+  margin-bottom: 4rem;
+}
+.result h3{
+	font-size: 2.4rem;
+	color: #7b7b7b;
+  margin-bottom: 3rem;
+}
+.result h1{
+  font-family: Futura-CondensedExtraBold;
+	font-size: 9.1rem;
+	color: #8fc31f;
+}
+.achievement h4{
+  text-align: center;
+	font-size: 2.4rem;
+	color: #7b7b7b;
+  padding-top: 4rem;
+  margin-bottom: 5rem;
+}
+.data-map {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.achievement h6 {
+    line-height: 4rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+}
+
+.achievement h6 i {
+    display: inline-block;
+    height: 0.98rem;
+    width: 1.05rem;
+    background: url(../../../common/image/Title-zhuangshi@3x.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 0.5rem;
+}
+
+.data-results {
+    width: 6.9rem;
+    height: 27.3rem;
+    background-color: #E8E8E8;
+    border-radius: 3.45rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.data {
+    width: 100%;
+    background-color: #1cda95;
+    border-radius: 3.45rem;
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    transition: height 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.icon-data {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.score {
+    color: white;
+    font-family: "PingFang SC";
+    font-size: 1.9rem;
+    margin: 0.5rem 0;
+}
+
+.desc {
+    color: white;
+    font-family: "PingFang SC";
+    font-size: 1.6rem;
+}
+
+.desc-text {
+    width: 6.5rem;
+    line-height: 4rem;
+    color: #7b7b7b;
+    font-family: "PingFang SC";
+    text-align: center;
+    font-size: 1.6rem;
+    letter-spacing: 3px;
+}
+.popup-f {
+    position: fixed;
+    width: 100%;
+    /*border-top: 1px solid #e5e5e5;*/
+    height: 7.9rem;
+    bottom: 0;
+    background-color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .5);
+}
+.popup-f>div{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.popup-f .btn {
+    width: 15rem;
+    line-height: 5rem;
+    text-align: center;
+    color: white;
+    border-radius: 1rem;
+    font-size: 2.4rem;
+}
+
+.popup-f .btn02 {
+    background-color: #1adb96;
+    border-radius: 5.6rem;
+    color: #fff;
+    margin: 0 auto;
+}
+.popup-f .btn-color01{
+    /*background-color: #8fc31f;*/
+    color: #7b7b7b;
+}
+.popup-f .btn-color02{
+    background-color: #1adb96;
+}
+.popup-f .btn-color03{
+    /*background-color: #FF9800;*/
+    color: #7b7b7b;
+}

@@ -1,0 +1,80 @@
+body {
+    background: url("../../../common/image/backgroundImage.jpg") no-repeat;
+    background-size: 100% 100%;
+    padding-top: 8rem;
+    box-sizing: border-box;
+}
+
+.avatar-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.image-position {
+    position: relative;
+}
+
+.image {
+    width: 20rem;
+}
+
+.come-image {
+    width: 18.4rem;
+    height: 8.1rem;
+    position: absolute;
+    left: 20rem;
+    top: -2rem;
+}
+.text-content h2{
+    font-size: 2.1rem;
+    width: 100%;
+    text-align: center;
+    color: #666666;
+
+}
+.text-content .text-desc {
+    font-size: 4rem;
+    color: #1adb96;
+    line-height: 5rem;
+}
+.text-desc-bottom {
+    font-size: 2.4rem;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.icon-wrap {
+    margin-top: 3.7rem;
+    margin-left: 3.7rem;
+    z-index: 999;
+}
+
+.text-content {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+circle {
+    transition: 1s;
+    transition-timing-function: linear
+}
+
+.svg-circle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.timer-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 9rem;
+    color: #07AFB9;
+}

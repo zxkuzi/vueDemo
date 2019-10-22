@@ -1,0 +1,128 @@
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+.top {
+    width: 100%;
+    padding-top: 2rem;
+    background-color: #fff;
+    /*border-bottom: 0.1rem solid #f9f9f9;*/
+}
+
+.return {
+    padding: 1.2rem 2.1rem;
+}
+
+.content {
+    padding: 0 5.4rem;
+}
+
+h1 {
+    font-family: PingFangSC-Medium;
+    margin-top: 3.1rem;
+    margin-bottom: 3.45rem;
+    font-size: 2.6rem;
+    color: #223330;
+}
+
+.codeTel {
+    font-size: 1.6rem;
+    color: #223330;
+    margin-bottom: 2.8rem;
+}
+
+.codeTel span {
+    color: #708782;
+}
+
+@keyframes animate {
+    100% {
+        opacity: 0;
+    }
+}
+
+.vcode {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.code {
+    width: 100%;
+    padding: 0;
+    height: 5.3rem;
+    font-size: 2rem;
+    overflow: hidden;
+    border: none;
+    outline: none;
+    opacity: 0;
+    margin-left: -100%;
+    /*ios上透明度为0时依然有光标*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+.labels {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    height: 5.3rem;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -webkit-tap-highlight-color: transparent;
+    /*解决ios点击灰色阴影的问题*/
+    margin-bottom: 3.45rem;
+}
+
+.label {
+    color: #333333;
+    font-size: 2.4rem;
+    width: 5.3rem;
+    height: 5.3rem;
+    line-height: 5.3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    border: solid 0.1rem #e9e9e9;
+    box-sizing: border-box;
+}
+
+
+/*伪类实现光标效果*/
+
+
+.active:after{
+    content: ' ';
+    display: inline-block;
+    height: 3px;
+    width: 40%;
+    background: #00b596;
+    animation: .8s animate infinite;
+    margin-bottom: 0.5rem;
+}
+
+.btn-login {
+    background-color: #00b596;
+    width: 100%;
+    color: white;
+    height: 5.4rem;
+    border-radius: 1rem;
+    font-size: 2.3rem;
+}
+
+.time {
+    line-height: 2rem;
+    font-size: 1.62rem;
+    text-align: center;
+    color: #00b497;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+}
+.send{
+    border-bottom: 1px solid #00b497;
+}
