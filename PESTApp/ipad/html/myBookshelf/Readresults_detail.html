@@ -26,51 +26,48 @@
 		</div>
 
 		<div id="share2" style="">
-			<div class="readTitle">阅读分享</div>
 			<div class="readResults smart">
 
 				 <div class="headPortrait">
-					 <img :src="userImage">
-					 <span>{{name}} <span style="color:#fa716f">·</span> 书摘朗读</span>
+					 <img :src="readData.userImage?hostUrl+readData.userImage:userImage">
+					 <span>{{resData.userName}} <span style="color:#fa716f">·</span> 书摘朗读</span>
 				 </div>
 				 <div class="record">
-						<svg class="icon" aria-hidden="true">
-							<use xlink:href="#icon-tz_-1"></use>
-					  </svg>
+						<svg class="icon" aria-hidden="true" @click="play">
+							<!-- <use xlink:href="#icon-tz_-1"></use> -->
+							<use :xlink:href="[ isPlay ? '#icon-tz_-1' : '#icon-bf_1']"></use>
+						  </svg>
+						  <audio ref="audio" :src="auioSrc" style="display:none;"></audio>
 						<div class="soundWave"></div>
 						<span>03:70</span>
 				 </div>
 				 <!-- <div class="" > -->
-						 <p  style="height:120px;overflow-y:scroll">
-						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-						hhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+						 <p v-html="resData.readAloudContent"  style="height:120px;overflow-y:scroll">
+						
 					</p>
 				 <!-- </div> -->
 
 				 <div class="bookDetails clearfix">
-						 <img :src="BookCover">
+						 <img :src="hostUrl+resData.bookCover">
 						 <div class="personNumber">
-								 <h2>{{bookName}}</h2>
-								 <span>{{author}}</span>
+								 <h2>{{resData.bookName}}</h2>
+								 <span>{{resData.bookAuthor}}</span>
 
 						 </div>
 
 				 </div>
 				 <div class="bookFoot langduFoot" style="margin-bottom:11.6rem;">
 					 <div class="">
-							 <div class="tit">连续天数</div>
-							<div class="titDetail">31天</div>
+							 <div class="tit">连续朗读</div>
+							<div class="titDetail">{{resData.totalContinuityReadAloudCount}}天</div>
 					 </div>
 					 <div class="">
 							 <div class="tit">累计朗读</div>
-							<div class="titDetail">四本书</div>
+							<div class="titDetail">{{resData.totalReadBookCount}}本书</div>
 					 </div>
 					 <div class="">
 							 <div class="tit">今日朗读</div>
-							<div class="titDetail">20分钟</div>
+							<div class="titDetail">{{resData.todayReadAloudMinute}}分钟</div>
 					 </div>
 					<!-- <span class="span01">嘀嗒伴我读书  读书看见成长</span> -->
 				 </div>
@@ -92,13 +89,13 @@
 					</div>
 				 </div>
 			</div>
-			<div class="tab">
+			<!-- <div class="tab">
 				<div class="tabR" @click="inviteFriend(false,2)">
 					<svg class="icon" aria-hidden="true">
 						 <use xlink:href="#icon-xqfx_-copy"></use>
 				</svg>分享
 				</div>
-			</div>
+			</div> -->
 	  </div>
 	</div>
 </div>
@@ -112,7 +109,7 @@
 <script type="text/javascript" src="../../../common/script/fastclick.js"></script>
 <script type="text/javascript" src="../../../common/script/custom-toast.js"></script>
 <script type="text/javascript" src="../../../common/script/lib-storage.js"></script>
-<script type="text/javascript" src="../../../common/script/lib-common.js"></script>
+<!-- <script type="text/javascript" src="../../../common/script/lib-common.js"></script> -->
 <!-- <script type="text/javascript" src="../../../common/script/services/lib-gradeTest-service.js"></script> -->
 <!-- <script type="text/javascript" src="../../../common/script/lib-analysis.js"></script> -->
 <script type="text/javascript" src="../../../common/script/services/lib-weChatShare-service.js"></script>
@@ -124,9 +121,13 @@
 				el: '#app',
 				data: {
 						isShowRule: false,
+						isShowRead:false,
+						hostUrl:'http://47.93.214.37:9748',
+						resData:{},
 						name:'',
 						isSlide:1,
 						bookName:'',
+						auioSrc:'',
 						userName:'',
 						swiper01:null,
 						author:'',    //作者
@@ -155,12 +156,7 @@
 						isHeart:null
 				},
 				created:function(){
-					console.log(this)
-					// this.pullDownFresh();
-					// this.loadInfo();
-					// this.getStorageInfo();
-					// this.getBookInfo();
-					// this.qrcode();
+	
 				},
 				filters:{
 				
@@ -168,16 +164,121 @@
 				mounted: function () {
 					console.log('-----------')
 					this.getData();	
+					if(window.location.href.indexOf('readaloud')>0){
+						this.isShowRead=true;
+					}else if(window.location.href.indexOf('readaloudwithcontent')>0){
+						this.isShowRead = true;
+					}
+
+					console.log(window.location.href)
 				},
 				methods: {
+					play(){
+						this.isPlay = !this.isPlay;
+						if(this.isPlay){
+							this.$refs.audio.play();
+						}else{
+							this.$refs.audio.pause();
+						}
+					},
+					socket:function(OpCode,JsonData,callback){
+						var ClientType = 1
+						var host = 'http://47.93.214.37';
+						var SessionId = '00000000-0000-0000-0000-000000000000';
+						// var port = 8888;
+						var port = 8866;
+						var userInfoToken =$storage.getStorage('token') ? $storage.getStorage('token') : 'init';;
+						var DeviceId = '101';
+						var DeviceVersion = 'ios13'
+						var data = {
+						Key:'',
+						OpCode:OpCode,
+						SessionId:SessionId,
+						ClientType:ClientType,
+						// DeviceVersion:1,
+						DeviceVersion:DeviceVersion,
+						DeviceId:DeviceId,
+						// Token:userInfoToken,
+						Token:'b2512352-7946-4293-a194-c628d377cd26',
+						JsonData:JSON.stringify(JsonData)
+						}
+						var newData = 'WebSocketProcessor '+JSON.stringify(data);
+
+						var websocket_connected_count = 0;
+
+						// var ws = new WebSocket("ws://192.168.3.168:8866");
+						//WebSocket莫名原因导致浏览器崩溃（app闪退）加入setTimeout解决
+						setTimeout(function() {
+						var ws = null;
+						var ws = new WebSocket('ws://47.93.214.37:8866');
+						console.log(111)
+							ws.onopen = function()
+							{
+								console.log(222)
+								// Web Socket 已连接上，使用 send() 方法发送数据
+								ws.send(newData);
+								// comm.showLoading();
+								// alert("数据发送中..."+JSON.stringify(newData));
+								console.log("数据发送中..."+newData)
+							};
+
+							ws.onmessage = function (evt)
+							{
+								//  alert(777)
+								var received_msg = evt.data;
+								if(received_msg){
+									// alert(88)
+									callback(received_msg)
+									isCanAgain = true
+								}
+
+								// comm.hideLoading();
+								// alert("数据已接收..."+received_msg);
+								// console.log("数据已接收..."+received_msg);
+							};
+							ws.onerror = function(){
+								//  websocket_connected_count++;
+								//  if(websocket_connected_count <= 5){
+								//   //  alert('hahah')
+								//     //  comm.socket(OpCode,JsonData,callback);
+								//     //  alert('kk')
+								//  }else{
+								//   //  alert('end')
+								//    ws.close()
+								//  }
+
+								//  setInterval(function(){
+								//   // comm.reconnect(host,port,newData)
+								//  },2000)
+								//网络出现错误的情况，参数进行重置
+								//  isCanAgain = true;
+							};
+							ws.onclose = function()
+							{
+								//  setInterval(function(){
+								//   //  alert(88)
+								//  },2000)
+
+								// 关闭 websocket
+								// alert("连接已关闭...");
+							};
+							}.bind(this), 5);
+					},
 					getData:function(){
 						let data = {
-							ShareId:1	
+							ShareId:'bd1ef2a1-f7b2-4d67-a90b-6af623131526'	
 						}
 						console.log(9999)
-						$comm.socket(10002,data,res=>{
-							console.log(88888888)
-							console.log(res)
+						this.socket(10002,data,res=>{
+							// console.log(88888888)
+							// console.log(res);
+							res= JSON.parse(res);
+							if(res.error==0){
+								console.log(res.datas);
+								this.resData = JSON.parse(res.datas).shareDetailInfo;
+								this.auioSrc = this.hostUrl+this.resData.audioUrl;
+								console.log(this.auioSrc)
+							}
 						})
 					}	
 						
@@ -186,3 +287,6 @@
 // };
 </script>
 </html>
+
+
+
