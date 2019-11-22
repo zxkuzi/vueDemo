@@ -42,7 +42,7 @@
 						<span>03:70</span>
 				 </div>
 				 <!-- <div class="" > -->
-						 <p v-html="resData.readAloudContent"  style="height:120px;overflow-y:scroll">
+						 <p v-html="resData.readAloudContent"  style="height:120px;overflow-y:scroll" v-if="isShowRead">
 
 					</p>
 				 <!-- </div> -->
@@ -153,7 +153,9 @@
 						deleteFlag:false,
 						txt:'',
 						num:0,
-						isHeart:null
+						isHeart:null,
+						token:'',
+						userId:''
 				},
 				created:function(){
 
@@ -162,15 +164,18 @@
 
 				},
 				mounted: function () {
-					console.log('-----------')
+
+					this.userId=this.getUrlParam(window.location.search, 'id')
+					this.token = this.getUrlParam(window.location.search, 'token')
 					this.getData();
 					if(window.location.href.indexOf('readaloud')>0){
 						this.isShowRead=true;
 					}else if(window.location.href.indexOf('readaloudwithcontent')>0){
 						this.isShowRead = true;
 					}
-
-					console.log(window.location.href)
+					// var url = window.location.search;
+					// var Guid = $commTool.getUrlParam(url, 'id');
+					// $commTool.ajaxPost('Share', 'SharedData', {ID: Guid}, funSuc, funErr);
 				},
 				methods: {
 					play(){
@@ -182,6 +187,7 @@
 						}
 					},
 					socket:function(OpCode,JsonData,callback){
+						var that=this;
 						var ClientType = 1
 						var host = 'http://47.93.214.37';
 						var SessionId = '00000000-0000-0000-0000-000000000000';
@@ -199,7 +205,7 @@
 						DeviceVersion:DeviceVersion,
 						DeviceId:DeviceId,
 						// Token:userInfoToken,
-						Token:'b2512352-7946-4293-a194-c628d377cd26',
+						Token:that.token,
 						JsonData:JSON.stringify(JsonData)
 						}
 						var newData = 'WebSocketProcessor '+JSON.stringify(data);
@@ -250,6 +256,11 @@
 							};
 							}.bind(this), 5);
 					},
+					getUrlParam(url, name) {
+			        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); // 构造一个含有目标参数的正则表达式对象
+			        var r = url.substr(1).match(reg);  // 匹配目标参数
+			        if (r != null) return unescape(r[2]); return null; // 返回参数值
+			    },
 					getData:function(){
 						let data = {
 							ShareId:'bd1ef2a1-f7b2-4d67-a90b-6af623131526'
