@@ -155,7 +155,8 @@
 						num:0,
 						isHeart:null,
 						token:'',
-						userId:''
+						userId:'',
+						showType:''
 				},
 				created:function(){
 
@@ -166,11 +167,12 @@
 				mounted: function () {
 
 					this.userId=this.getUrlParam(window.location.search, 'id')
-					this.token = this.getUrlParam(window.location.search, 'token')
+					this.token = this.getUrlParam(window.location.search, 'token');
+					this.showType = this.getUrlParam(window.location.search, 't');
 					this.getData();
-					if(window.location.href.indexOf('readaloud')>0){
+					if(this.showType==2){
 						this.isShowRead=true;
-					}else if(window.location.href.indexOf('readaloudwithcontent')>0){
+					}else if(this.showType==3){
 						this.isShowRead = true;
 					}
 					// var url = window.location.search;
